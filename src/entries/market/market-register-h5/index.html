@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.5, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">      
+	<link rel="dns-prefetch" href="http://saas.ishanshan.com">              
+	<link rel="icon" type="image/ico" href="http://115.29.172.104/gimg/img/156e722490bac112f714ec5d713aa73e!s200">  
+    <link rel="stylesheet" href="index.css"/>
+    <title>活动报名</title>
+</head>
+<body><div id="marketRegisterH5"/></body>
+<script src = "common.js"></script>
+<script src = "index.js"></script>
+
+<script src = "//www.ishanshan.com/resources/zepto.min.js"></script>
+
+<script type="text/javascript">
+(function () {
+
+	function sendCode(mobile) {
+
+		var el = $(".vertifyBtn");
+		if (!el.hasClass("disabled")) {
+			el.addClass("disabled");
+			var s = 60;
+			el.html(s + "s后重发");
+			var t = setInterval(function () {
+				if (--s == 0) {
+					clearInterval(t);
+					el.css("background-color", "#5d9cec");
+					el.css("color", "white");
+					el.removeClass("disabled");
+					el.html("获取验证码");
+				} else {
+					el.css("background-color", "#f1f1f1");
+					el.css("color", "#999");
+					el.html(s + "s后重发");
+				}
+			}, 1000);
+
+			$.ajax({
+				url: '/thinknode/post/common/sendVerifyCodeNormal',
+				type: "post",
+				dataType: "json",
+				data: {
+					data: {
+						// 二次验证所需的三个值
+						mobile: $("input[name=mobile]").val()
+					}
+				},
+				success: function (data) {
+					
+					if (data&&data.errorCode == 9000) {
+						alert("短信发送成功!");
+					} else {
+						alert(data.errorMessage);
+						el.html("获取验证码");
+						clearInterval(t);
+						el.removeClass("disabled");
+					}
+				}
+			});
+		}
+	}
+
+	$(document).on('click', '.vertifyBtn',
+		function () {
+			var el = $(this);
+			if (el.hasClass("disabled")) {
+				return;
+			}
+			var mobileEl = $("input[name='mobile']");
+			var mobile = mobileEl.val();
+
+			if (!(/^1[3|4|5|6|7|8|9]\d{9}$/.test(mobile))) {
+				alert("请输入正确的手机号");
+				return;
+			}
+
+			sendCode(mobile);
+		});
+})(this);
+
+</script>
+
+</html>

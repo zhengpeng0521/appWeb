@@ -1,0 +1,65 @@
+:global {
+	.swiper-container {
+		height: 100%;
+        width: 100%;
+	}
+
+    .swiper-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.micro_module_cont {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.one_page_cont {
+    width: 100%;
+    height: 100%;
+}
+
+.module_music_cont {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    border-radius: 50%;
+    z-index: 3333;
+}
+
+.moduleMusicStateClassPlay {
+    width: 100%;
+    height: 100%;
+    background: url(http://115.29.172.104/gimg/ori/dc7fa210cb69f040ca81a01093d18293) no-repeat center 0;
+    background-size: cover!important;
+    background-position: 50%;
+    animation: module_music_play_anim 5s;
+    animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.moduleMusicStateClassPause {
+    width: 100%;
+    height: 100%;
+    background: url(http://115.29.172.104/gimg/ori/aedc1560e3f15db77eb17f998c97af04) no-repeat center 0;
+    background-size: cover!important;
+    background-position: 50%;
+    -webkit-animation: none;
+    animation: none;
+}
+
+@keyframes module_music_play_anim {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		    transform: rotate(1turn);
+	}
+}

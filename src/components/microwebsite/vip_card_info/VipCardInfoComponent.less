@@ -1,0 +1,143 @@
+@import '../../common/commonLess/HomeAndSchool.less';
+p, div{
+	margin : 0;
+	padding : 0;
+}
+.card_info_wrap{
+	width : 100%;
+	height : 100%;
+	background : @base_bg_color;
+}
+.card_base_info{
+	position : relative;
+	width : 100%;
+	height : 460px;
+	background : @bg_color;
+}
+.card_base_info::before{
+	content : '';
+	position : absolute;
+	top : 60px;
+	margin : auto; left : 0; right : 0;
+	width : calc( ~'100% - 120px' );
+	height : 340px;
+	background : url('http://img.ishanshan.com/gimg/img/ee63bbd4f5f3ef0bd54673ff90555b18!s300') center center;
+	background-size : 100% 100%;
+	border-radius : 32px;
+    box-shadow : 5px 5px 50px #ddd;
+}
+.card_base_info_content{
+	position : absolute;
+	top : 60px;
+	width : calc( ~'100% - 120px' );
+	height : 280px;
+	margin : auto; left : 0; right : 0;
+	padding-top : 60px;
+
+}
+
+.card_base_info_item{
+	font-size : 24px;
+	color : #fff;
+	margin : 0 0 10px 20px;
+}
+.card_num{
+	position : absolute;
+	bottom : 20px;
+	left : 20px;
+	margin : 0;
+	font-size : 26px;
+	color : #fff;
+}
+.card_base_info_item_label{
+	margin-right : 20px;
+}
+// .card_base_info_item_value{
+
+// }
+
+/*会员卡课时信息*/
+// .card_all_info{
+
+// }
+.card_all_info_content{
+	margin : 30px 30px 0 30px;
+    padding : 0 0 30px 0;
+	// border-bottom : 2px solid #ddd;
+}
+.card_all_info_item{
+	font-size : 28px;
+	margin-bottom : 20px;
+}
+.card_all_info_item:last-child{
+	margin-bottom : 0;
+}
+.card_all_info_item_label{
+	color : #999;
+	margin-right : 20px;
+}
+.card_all_info_item_value{
+	color : #666;
+}
+.card_balance{
+	margin : 30px 0 0 30px;
+}
+
+
+.card_all_info_detail{
+    width:80%;
+    min-height: 60px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+.card_all_info_detail_title{
+    width : 100%;
+    height:60px;
+    line-height: 60px;
+    display: flex;
+    background: #eee;
+}
+.card_all_info_detail_title p{
+    width:50%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+.card_all_info_detail_title p:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+.card_all_info_detail_list {
+    min-height: 60px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.card_all_info_detail_items{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    text-align: center;
+}
+.card_all_info_detail_item{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    list-style: none;
+}
+
+.card_all_info_detail_list p{
+    width:50%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.card_all_info_detail_list p:nth-child(1){
+    border-right: 1px solid #ccc;
+}

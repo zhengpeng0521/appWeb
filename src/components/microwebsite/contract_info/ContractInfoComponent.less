@@ -1,0 +1,51 @@
+@import '../../common/commonLess/HomeAndSchool.less';
+
+:global{
+	.contract_list_view_wrap .am-list-view-scrollview-content{
+		background : @bg_color;
+	}
+	.contract_list_view_wrap .list-view-section-body{
+		background : @bg_color;
+		padding-top : 20px;
+	}
+}
+.render_row{
+	position : relative;
+	margin : 0 auto;
+	width : calc( ~'100% - 60px' );
+//	height : 275px;
+	box-sizing : border-box;
+	border-top : 10px solid @base_color;
+	background : @base_bg_color;
+	border-radius : 12px;
+	padding-bottom : 10px;
+}
+.render_row::before{
+	content : '';
+	position : absolute;
+	bottom : 20px;
+	right : 20px;
+	width : 77px;
+	height : 91px;
+	background : url('http://img.ishanshan.com/gimg/img/9d0784f995849bbb764462930da1b8c6!s300');
+	background-size : cover;
+}
+.render_separator{
+	width : 100%;
+	height : 20px;
+}
+.render_row_item{
+	margin-bottom : 20px;
+	margin-left : 20px;
+	font-size : 24px;
+//	height : 24px;
+}
+.render_row_item:last-child{
+//	margin-bottom : 0;
+}
+.render_row_item_label{
+	color : #999;
+}
+.render_row_item_value{
+	color : #666;
+}

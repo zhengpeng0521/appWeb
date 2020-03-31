@@ -1,0 +1,67 @@
+@import '../common/common_animation.less';
+.mask_view {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation: maskAni;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.alert_view_box {
+    height: 350px;
+    width: 70%;
+    background-color: white;
+    margin-top: 50%;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    animation: alertViewAni;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    left: 15%;
+}
+
+.alert_title {
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    padding: 35px 0px 0px 0px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 42px;
+}
+
+.alert_subtitle {
+    .alert_title();
+    font-size: 28px;
+    padding: 20px 0px 0px 0px;
+    line-height: 42px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #999;
+}
+
+.alert_button {
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    border-radius: 10px;
+    height: 88px;
+    width: 40%;
+    line-height: 88px; // margin-top: 18%;
+    float: left;
+    position: absolute;
+    bottom: 35px;
+}

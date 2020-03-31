@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>口碑预约</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=1.0,minimum-scale=0.5,user-scalable=no" />
+    <script src="https://os.alipayobjects.com/rmsportal/oknmeDPmBzRhliY.js"></script>
+    <script type="text/javascript">
+        window._baseParams = {
+            'shopId'		:'${shopId}',
+            'merchantPid'	:'${merchantPid}',
+            'alipayUserId'	:'${alipayUserId}',
+        };
+        window.alipayBreakpoint = function(appId,commodityId,shopId,operateName,operateId,type){
+            var alipayBreakPointMessage = {
+                appId : appId || undefined,
+                commodityId : commodityId || undefined,
+                shopId : shopId || undefined,
+                operateName : operateName || undefined,
+                operateId : operateId || undefined
+            }
+            if(type == 'start'){
+                try{
+                    document.addEventListener('AlipayJSBridgeReady', function(){
+                        MCloudJSBridge.processStartLog(alipayBreakPointMessage);
+                    });
+                }catch(e){
+                    console.info('courseIntroStartError',e);
+                }
+            }else if(type == 'action'){
+                try{
+                    MCloudJSBridge.processActionLog(alipayBreakPointMessage);
+                }catch(e) {
+                    console.info('courseIntroActionError',e);
+                }
+            }else if(type == 'end'){
+                try{
+                    MCloudJSBridge.processEndLog(alipayBreakPointMessage);
+                }catch(e) {
+                    console.info('courseIntroEndError',e);
+                }
+            }else{
+                //type == error或者其他状态都属于业务异常
+                try{
+                    MCloudJSBridge.processErrorLog(alipayBreakPointMessage);
+                }catch(e) {
+                    console.info('courseIntroErrorError',e);
+                }
+            }
+        }
+        window.alipayBreakpoint('2016061601525581','201607150128330011',_baseParams.shopId,'进入口碑预约首页','booking_start','start');
+    </script>
+
+  	<link rel="icon" type="image/ico" href="http://115.29.172.104/gimg/img/156e722490bac112f714ec5d713aa73e!s200">
+  	<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<div id="root"></div>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

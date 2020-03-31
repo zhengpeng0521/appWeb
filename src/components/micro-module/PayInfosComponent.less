@@ -1,0 +1,136 @@
+.pay_infos_cont {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 9999;
+}
+
+.pay_infos_icon_cont {
+    position: fixed;
+    top: 35%;
+    right: 20px;
+    z-index: 1000;
+}
+
+.pay_infos_icon {
+    width: 100px;
+}
+
+/*支付凭证窗口*/
+.pay_infos_list_modal_open {
+    opacity: 1;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.pay_infos_list_modal_close {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s;
+}
+
+.pay_infos_list_modal_content {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    top: 25%;
+}
+
+.pay_infos_list_modal_btn_cont {
+    display: block;
+    top: -110px;
+    right: 10px;
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.pay_infos_list_modal_btn {
+    display: inline-block;
+    content: ' ';
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.80);
+    background-image: url(http://img.ishanshan.com/gimg/img/8cc1526ca258b3026c51ed296e9cee55);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pay_infos_modal_title {
+    font-size: 50px;
+    color: #5E99EC;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.pay_infos_list_cont {
+    width: 100%;
+    height: 468px;
+}
+
+.pay_infos_item {
+    background-color: #FFFFFF;
+    padding: 0.3rem;
+    border-radius: 15px;
+    width: 75%;
+    margin: 0 auto;
+    border: 4px solid #5E99EC;
+}
+
+.pay_infos_item_line {
+    width: 100%;
+    display: inline-flex;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.6rem;
+    color: #666666;
+    line-height: 0.7rem;
+}
+
+.pay_info_item_line_title {
+    width: 30%;
+    text-align: right;
+}
+
+.pay_info_item_line_text {
+    width: 70%;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 0.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.carousel_arrow_cont {
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 59px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carousel_arrow_img {
+    margin-right: 20px;
+}

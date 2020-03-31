@@ -1,0 +1,167 @@
+@import '../../../entries/miniwx/index.less';
+
+.report_detail_header{
+	position : relative;
+	display : flex;
+	align-items : center;
+	width : 100%;
+	height : 4.7rem;
+	color : @label_color;
+	padding : 0 1.5rem;
+	box-sizing : border-box;
+	font-size : @lg_font_size;
+	background : @base_background;
+}
+.report_detail_header_select{
+	width : 50%;
+	height : 3.4rem;
+	line-height : 3.4rem;
+	text-align : center;
+}
+.time_select_text{
+	display : inline-block;
+}
+.time_select_arrow, .time_select_arrow_up{
+	display : inline-block;
+	vertical-align : middle;
+	margin-left : 1rem;
+	width : 1rem;
+	height : .6rem;
+	background : url('https://img.ishanshan.com/gimg/img/850081422c0776b5230ca236c1de4562') no-repeat;
+	background-size : cover;
+	transition : transform .1s ease-in-out;
+}
+.time_select_arrow_up{
+	transform : rotate( 180deg );
+}
+
+//报表详情内容
+.report_detail_content{
+	width : 100%;
+	height : calc( ~'100% - 6.2rem');
+	margin-top : 1.5rem;
+	background : @light_background;
+}
+.report_detail_content_header{
+	width : 100%;
+	height : 7.5rem;
+	padding : 0 1.5rem;
+	background : @base_background;
+	box-sizing : border-box;
+}
+.report_detail_content_header_box{
+	width : 100%;
+	height : 7.4rem;
+	margin : 0 auto;
+	padding : 2rem 0;
+	box-sizing : border-box;
+	border-bottom : 1px solid @border_color;
+	text-align : center;
+}
+.report_detail_content_header_total{
+	position : relative;
+	display : inline-block;
+	height : 3.4rem;
+	line-height : 3.4rem;
+	font-size : 4.2rem;
+}
+.report_detail_content_header_percent{
+	position : absolute;
+	right : -1rem;
+	bottom : 0;
+	transform : translateX( 100% );
+	font-size : 1.2rem;
+	height : 1.2rem;
+	line-height : 1.2rem;
+	white-space : nowrap;
+}
+.report_detail_content_header_percent_tip{
+	display : inline-block;
+	color : #666;
+}
+.report_detail_content_header_percent_num{
+	display : inline-block;
+	color : @warn_color;
+}
+.report_detail_content_header_percent_num_minus{
+	display : inline-block;
+	color : @confirm_color;
+}
+.report_detail_content_scroll{
+	width : 100%;
+	max-height : calc( ~'100% - 7.5rem' );
+	padding : 0 1.5rem;
+	box-sizing : border-box;
+	overflow : auto;
+	background : @base_background;
+    padding-bottom: 6rem;
+}
+.report_detail_content_item{
+	display : flex;
+	justify-content : space-between;
+	width : 100%;
+	margin-bottom : 1.5rem;
+	height : @mid_font_size;
+	font-size : @mid_font_size;
+	line-height : @mid_font_size;
+	color : @value_color;
+}
+.report_detail_content_item_list{
+    display : flex;
+	justify-content : space-between;
+	width : 100%;
+	margin-bottom : 1.5rem;
+	height : @mid_font_size;
+	font-size : @mid_font_size;
+	line-height : @mid_font_size;
+	color : @value_color;
+}
+.report_detail_content_item_name{
+	width : 11.8rem;
+	text-align : center;
+}
+.report_detail_content_item_num{
+	width : 14.6rem;
+	text-align : center;
+}
+.report_detail_content_item_bottom{
+    width:100%;
+    height:2rem;
+    line-height:2rem;
+    text-align: center;
+    font-size:1.2rem;
+}
+
+.report_detail_content_return{
+    position: fixed;
+    bottom:8rem;
+    right:1rem;
+    width:5rem;
+    height:5rem;
+    line-height:5rem;
+    text-align: center;
+    border-radius: 50%;
+    background : rgba( 0, 0, 0, .3 );
+    color:#fff;
+    box-shadow: 0 0 0 1px rgba(16, 142, 233, 0.2);
+    z-index: 999999;
+
+}
+.report_detail_content_return p:nth-child(1){
+    height:1rem;
+    line-height:1rem;
+    margin :0;
+}
+.report_detail_content_return img{
+    display: block;
+    width:2.2rem;
+    height:1.6rem;
+    margin :0 auto;
+    margin-top:0.8rem;
+}
+.report_detail_content_return p:nth-child(2){
+    height:1rem;
+    line-height:1rem;
+    font-size:1.2rem;
+
+}

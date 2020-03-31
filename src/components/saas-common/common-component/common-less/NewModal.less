@@ -1,0 +1,23 @@
+@import '../common-less/common.less';
+
+:global{
+    .common_page_right_enter_modal_open,.common_page_right_enter_modal_close{
+        height : 100%;
+        width : 100%;
+        top : 0;
+        bottom :0;
+        left : 0;
+        right : 0;
+        z-index: 999;
+        background-color: #fff;
+        position:fixed;
+    }
+    .common_page_right_enter_modal_open{
+        .transform(translate(0));
+        .transition(all .2s linear);
+    }
+    .common_page_right_enter_modal_close{
+        .transform(translate(100%));
+        .transition(all .2s linear);
+    }
+}

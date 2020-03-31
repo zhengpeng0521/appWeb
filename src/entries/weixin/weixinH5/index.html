@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.5, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">      
+	<link rel="dns-prefetch" href="http://saas.ishanshan.com">              
+	<link rel="icon" type="image/ico" href="http://115.29.172.104/gimg/img/156e722490bac112f714ec5d713aa73e!s200">  
+    <link rel="stylesheet" href="index.css"/>
+    <title></title>
+	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.client.min.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?00d897c536753cb8048c0a5e1c453345";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body><div id="weixinH5"/></body>
+<script src = "https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src = "index.js"></script>
+</html>
+<script src = "http://www.ishanshan.com/resources/ad/ad-util.js"></script>
+<script>
+	(function(para) {
+		var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+		w['sensorsDataAnalytic201505'] = n;
+		w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+		var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+		for (var i = 0; i < ifs.length; i++) {
+			w[n][ifs[i]] = w[n].call(null, ifs[i]);
+		}
+		if (!w[n]._t) {
+			x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+			x.async = 1;
+			x.src = p;
+			y.parentNode.insertBefore(x, y);
+			w[n].para = para;
+		  }
+	})({
+		sdk_url: 'https://img.ishanshan.com/resources/js/sdk.js',
+		name: 'sa',
+		server_url:'https://www.ishanshan.com/track/s.gif'
+	});  
+	sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上
+</script>
+<script>
+	var buriedPointParam = {};
+	function setParam(tenantId, orgId, mATag, mAName, mAInst, mAInstName) {
+		buriedPointParam._tenantId 		= tenantId,
+		buriedPointParam._orgId 		= orgId,
+		buriedPointParam._mATag 		= mATag,
+		buriedPointParam._mAName 		= mAName,
+		buriedPointParam._mAInst 		= mAInst,
+		buriedPointParam._mAInstName 	= mAInstName,
+		sa.track("m_a_load", buriedPointParam);
+	}
+	var buriedLPointParam = {};
+	function setLParam(tenantId, orgId, mLTag, mLName, mLInst, mLInstName) {
+		buriedLPointParam._tenantId 	= tenantId,
+		buriedLPointParam._orgId 		= orgId,
+		buriedLPointParam._mLTag 		= mLTag,
+		buriedLPointParam._mLName 		= mLName,
+		buriedLPointParam._mLInst 		= mLInst,
+		buriedLPointParam._mLInstName 	= mLInstName,
+		sa.track("m_l_load", buriedLPointParam);
+	}
+</script>
+<script type="text/javascript">	
+	function GetQueryString(index) {
+		var tempArr = window.location.hash.split('?');
+		tempArr = tempArr[tempArr.length - 1].split('&');
+		let vue = tempArr[index];
+		var pos = vue.indexOf('=');
+		var result = vue.substring(pos+1, vue.length);
+		return result;
+	}
+	
+	var caseValue 		= GetQueryString(0);
+	var instanceIdValue = GetQueryString(4);
+	var tenantIdValue	= GetQueryString(2);
+	var orgIdValue 		= GetQueryString(3);
+	
+	if(caseValue.length > 0 && instanceIdValue.length > 0 && tenantIdValue.length > 0 && orgIdValue.length > 0) {   
+		createH5Ad && createH5Ad('activity', caseValue || '', instanceIdValue || '', tenantIdValue || '', orgIdValue || '');
+	}
+</script>

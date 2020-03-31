@@ -1,0 +1,123 @@
+:global{
+	.product_list_view_wrap{
+		height : calc( ~'100% - 118px' );
+		padding-top : 30px;
+		background : #f9f9f9;
+	}
+	.list-view-section-body{
+		background : #f9f9f9;
+	}
+	.product_list_view_wrap .am-list-body{
+		border : 0;
+	}
+
+	.popover_product_info{
+		top : 90px !important;
+		left : initial !important;
+		right : 10px;
+	}
+}
+
+.product_header{
+	position : relative;
+	width : 100%;
+	height : 87px;
+	background : #fff;
+	border-bottom : 1px solid #ddd;
+}
+.product_header_name{
+	position : absolute;
+	top : 30px;
+	left : 30px;
+	font-size : 28px;
+	color : #333;
+}
+.product_header_time{
+	position : absolute;
+	top : 30px;
+	right : 150px;
+	font-size : 28px;
+	color : #333;
+}
+.product_header_time_asc, .product_header_time_desc{
+	display : inline-block;
+	width : 13px;
+	height : 18px;
+	margin-left : 10px;
+}
+.product_header_time_asc{
+	background : url('http://img.ishanshan.com/gimg/img/00539ce1637e357cf5f80b1eebe272fb');
+}
+.product_header_time_desc{
+	background : url('http://img.ishanshan.com/gimg/img/7e8b364575201a81ba384caf6cd84faa');
+}
+.product_header_type{
+	position : absolute;
+	top : 30px;
+	right : 30px;
+	font-size : 28px;
+	color : #333;
+	z-index : 100;
+}
+.type_down{
+	font-size : 16px;
+	margin-left : 10px;
+	display : inline-block;
+}
+.type_text{
+	display : inline-block;
+    width : 56px;
+    overflow : hidden;
+    white-space : nowrap;
+    vertical-align : middle;
+}
+.product_type_item{
+//	height : 60px;
+//	line-height : 60px;
+}
+
+.render_row{
+	position : relative;
+	width : calc( ~'100% - 60px' );
+	margin : 0 auto;
+}
+.render_row_img{
+	width : calc( ~'100% - 150px' );
+	margin-left : 150px;
+	padding : 20px;
+	background : #fff;
+	border-radius : 12px;
+    box-sizing : border-box;
+}
+.render_row_time{
+	position : absolute;
+	left : 0;
+	top : 20px;
+}
+.render_row_img_item{
+	position : relative;
+	margin-bottom : 20px;
+}
+.render_row_img_item:last-child{
+	margin-bottom : 0;
+}
+.render_row_item_img{
+	width : 170px;
+	height : 170px;
+	border-radius : 12px;
+	background-size : cover;
+	background-position : center center;
+}
+.render_row_item_label{
+	position : absolute;
+	top : 0;
+	left : 190px;
+    line-height : 34px;
+	font-size : 26px;
+	color : #999;
+	height : 100%;
+	display : -webkit-box;
+    -webkit-box-orient : vertical;
+    -webkit-line-clamp : 5;
+    overflow : hidden;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.5, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">                   
+	<meta name="keywords" content="微官网, 小应用, H5, 游戏">
+	<link rel="dns-prefetch" href="http://saas.ishanshan.com">              
+	<link rel="icon" type="image/png" href="http://115.29.172.104/gimg/img/156e722490bac112f714ec5d713aa73e!s200">  
+    <link rel="stylesheet" href="index.css" />
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?00d897c536753cb8048c0a5e1c453345";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<script>
+	(function(para) {
+		var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+		w['sensorsDataAnalytic201505'] = n;
+		w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+		var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+		for (var i = 0; i < ifs.length; i++) {
+			w[n][ifs[i]] = w[n].call(null, ifs[i]);
+		}
+		if (!w[n]._t) {
+			x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+			x.async = 1;
+			x.src = p;
+			y.parentNode.insertBefore(x, y);
+			w[n].para = para;
+		  }
+	})({
+		sdk_url: 'https://img.ishanshan.com/resources/js/sdk.js',
+		name: 'sa',
+		server_url:'https://www.ishanshan.com/track/s.gif'
+	});  
+	sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上
+	</script>
+   	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=ea91dy3HDvuYLuuDgLsp7LOGBe0v2BbZ"></script>
+    <title></title>
+</head>
+
+<body>
+	<div id="microwebsite" />
+</body>
+<script>	
+//	var openid = "<%= openid %>"; 
+	var openid = 'ofSi5s3XeP_Y1t60KTA3_U8yiFrI';
+</script>
+<script src = "https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src = "/h5/js/exif.js"></script>
+<script type="text/javascript">  
+	
+	var cuerrentLng = '';
+	var cuerrentLat = '';
+	var currentCity = '';
+
+	function currentLocation() {
+		var map = new BMap.Map("base_map");
+		var map_city = new BMap.LocalCity();
+		map_city.get(function(result) {
+			currentCity = result.name;
+		});
+		var point = new BMap.Point(0, 0);
+		map.centerAndZoom(point,19);
+		var geolocation = new BMap.Geolocation();
+		geolocation.getCurrentPosition(function(r){
+			if(this.getStatus() == BMAP_STATUS_SUCCESS){
+				var mk = new BMap.Marker(r.point);
+				map.addOverlay(mk);
+				map.panTo(r.point);
+				cuerrentLng = r.point.lng;
+				cuerrentLat = r.point.lat;
+			} else {
+				alert('获取位置失败');
+			}        
+		},{enableHighAccuracy: true})
+	}
+	
+	function longitudeAndlatitude(lng, lat) {
+		currentLocation();
+		if(lng, lat) {
+			var map = new BMap.Map('base_map');
+			map.centerAndZoom(new BMap.Point(lng, lat), 19);
+			map.enableScrollWheelZoom(true);
+			map.clearOverlays(); 
+			var new_point = new BMap.Point(lng, lat);
+			var marker = new BMap.Marker(new_point); 
+			map.addOverlay(marker);              
+			map.panTo(new_point);      
+		}	
+	}
+	
+	function initialize(address) {  
+		currentLocation();
+		var map = new BMap.Map('base_map');
+		var new_point = new BMap.Point(0, 0);
+		var myGeo = new BMap.Geocoder();
+		myGeo.getPoint(address, function(new_point){
+				if (new_point) {
+					map.centerAndZoom(new_point, 19);
+					map.addOverlay(new BMap.Marker(new_point));
+				} else {
+					alert('地址解析失败');
+				}
+		});
+	}
+	
+	function loadScript(url) {  
+		var script = document.createElement("script");
+		script.src = url;
+		document.body.appendChild(script);
+	}  
+</script>
+<script>
+	var u = navigator.userAgent;
+    var isiOS 	= !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+	var w  = document.body.clientWidth;     
+	var h  = document.body.clientHeight;    
+</script>
+<script src = "common.js"></script>
+<script src = "index.js"></script>
+</html>

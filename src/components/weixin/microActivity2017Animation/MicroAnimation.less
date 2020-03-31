@@ -1,0 +1,260 @@
+@import '../../common/commonLess/AnimationLibKey.less';
+.text {
+	color: red;
+	float: left;
+	padding: 10px;
+	font-size: 0.3rem;
+	text-align: center;
+	width: calc(~"50% - 20px");
+	width : 100%;
+}
+
+.targer {
+	width: 2rem;
+	height: 1rem;
+	margin: auto;
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-image: url("http://115.29.172.104/gimg/img/8aac88552217869a246458cb692ab92c");
+}
+
+.ani_zhujianxianshi {
+	opacity: 0;
+	.targer();
+	.ANI(@ANI_FIXED 3s LINEAR 0s forwards);
+}
+
+.ani_zuocedanchu {
+	.targer();
+	.ANI(ani_left_fade_out 3000ms linear 0ms infinite);
+}
+
+.ani_youcedanchu {
+	.targer();
+	.ANI(ani_right_fade_out 3000ms linear 0ms infinite);
+}
+
+.ani_zuocedanru {
+	.targer();
+	.ANI(ani_left_fade_in 3000ms linear 0ms infinite);
+}
+
+.ani_youcedanru {
+	.targer();
+	.ANI(ani_right_fade_in 3000ms linear 0ms infinite);
+}
+
+.ani_zuoyouhuangdong {
+	.targer();
+	.ANI(ani_swing 3000ms linear 0ms infinite);
+}
+
+.ani_zhujianbianda {
+	.targer();
+	.ANI(ani_grow_big 3000ms linear 0ms infinite);
+}
+
+.ani_zhujianbianxiao {
+	.targer();
+	.ANI(ani_grow_small 3000ms linear 0ms infinite);
+}
+
+.ani_liuxing {
+	.targer();
+	.ANI(ani_shooting_star 3000ms linear 0ms infinite);
+}
+
+.ani_baidongtingzhi {
+	.targer();
+	.ANI(ani_swing_stop 1000ms linear 0ms infinite);
+}
+
+.ani_doudong {
+	.targer();
+	.ANI(ani_jitter 100ms linear 0ms infinite);
+}
+
+.ani_360xuanzhuan {
+	.targer();
+	.ANI(ani_rotate360 3000ms linear 0ms infinite);
+}
+
+.ani_180xuanzhuan {
+	.targer();
+	.ANI(ani_rotate180 3000ms linear 0ms infinite);
+}
+
+.ani_90xuanzhuan {
+	.targer();
+	.ANI(ani_rotate90 3000ms linear 0ms infinite);
+}
+
+.ani_45xuanzhuan {
+	.targer();
+	.ANI(ani_rotate45 3000ms linear 0ms infinite);
+}
+
+.ani_contrary_360xuanzhuan {
+	.targer();
+	.ANI(ani_contrary_rotate360 3000ms linear 0ms infinite);
+}
+
+.ani_contrary_180xuanzhuan {
+	.targer();
+	.ANI(ani_contrary_rotate180 3000ms linear 0ms infinite);
+}
+
+.ani_contrary_90xuanzhuan {
+	.targer();
+	.ANI(ani_contrary_rotate90 3000ms linear 0ms infinite);
+}
+
+.ani_contrary_45xuanzhuan {
+	.targer();
+	.ANI(ani_contrary_rotate45 3000ms linear 0ms infinite);
+}
+
+.ani_congshangchuxianduan {
+	.targer();
+	.ANI(ani_top_to_bottom 3000ms linear 0ms infinite);
+}
+
+.ani_congshangchuxianchang {
+	.targer();
+	.ANI(ani_top_to_bottom_long 3000ms linear 0ms infinite);
+}
+
+.ani_quanpingchuanguoRL {
+	.targer();
+	.ANI(ani_right_through 3000ms linear 0ms infinite);
+}
+
+.ani_quanpingchuanguoLR {
+	.targer();
+	.ANI(ani_left_through 3000ms linear 0ms infinite);
+}
+
+.ani_gudinghuangdong {
+	.targer();
+	.ANI(ani_fixed_center_swing 1000ms linear 0ms infinite);
+}
+
+.ani_shangxiabaidong {
+	.targer();
+	.ANI(ani_shaking 1000ms linear 0ms infinite);
+}
+
+.ani_shangshengxiaoshi {
+	.targer();
+	.ANI(ani_rising 3000ms linear 0ms infinite);
+}
+
+.ani_xiajiangxiaoshi {
+	.targer();
+	.ANI(ani_rising 3000ms linear 0ms infinite);
+}
+
+.ani_shangxiatiaodong {
+	.targer();
+	.ANI(ani_beating 1000ms linear 0ms infinite);
+}
+
+.ani_gaokongdiaoluo {
+	.targer();
+	.ANI(ani_landing 1000ms linear 0ms infinite);
+}
+
+.ani_buguizedoudong {
+	.targer();
+	.ANI(ani_top_bottom_jitter 1000ms linear 0ms infinite);
+}
+
+.ani_gudinghuangdongjulie {
+	.targer();
+	.ANI(ani_fixed_center_swing_severe 1000ms linear 0ms infinite);
+}
+
+.ani_xuanzhuanchuxian {
+	.targer();
+	.ANI(ani_rotate_show 1000ms linear 0ms infinite);
+}
+
+.ani_xintiao {
+	.targer();
+	.ANI(ani_grow_continuous_change 1000ms linear 0ms infinite);
+}
+
+.ani_text_print_class {
+	//	.ani(ani_rising 3000ms linear 0ms infinite);
+}
+
+.ani_big_doudong {
+	.targer();
+	.ANI(ani_grow_big_jitter 1000ms linear 0ms infinite);
+}
+
+.ani_shangshengpinghuan {
+	.targer();
+	.ANI(ani_shaking_gentle 1000ms linear 0ms infinite);
+}
+
+.ani_zuobaiqiu {
+	.targer();
+	border-radius: 50%;
+	.ANI_NEWTON_L();
+}
+
+.ani_youbaiqiu {
+	.targer();
+	border-radius: 50%;
+	.ANI_NEWTON_R();
+}
+
+.ani_congxiachuxianduan {
+	.targer();
+	.ANI(ani_bottom_to_top 3000ms linear 0ms infinite);
+}
+
+.ani_congxiachuxianchang {
+	.targer();
+	.ANI(ani_bottom_to_top_long 3000ms linear 0ms infinite);
+}
+
+.ani_shacheyidongzuo {	
+	.targer();
+	.ANI(ani_brake_sprint_left 3000ms linear 0ms infinite);
+}
+
+.ani_shacheyidongyou {	
+	.targer();
+	.ANI(ani_brake_sprint_right 3000ms linear 0ms infinite);
+}
+
+.ani_shacheyidongshang {	
+	.targer();
+	.ANI(ani_brake_sprint_top 3000ms linear 0ms infinite);
+}
+
+.ani_shacheyidongxia {	
+	.targer();
+	.ANI(ani_brake_sprint_bottom 3000ms linear 0ms infinite);
+}
+
+.ani_bolang {
+	.targer();
+	.ANI(wave_move 3000ms linear 0ms infinite);
+}
+
+.ani_xiajiangxiaoshi {
+	.targer();
+	.ANI(ani_falling 3000ms linear 0ms infinite);
+}
+
+.ani_ani_huximoshi {
+	.targer();
+	.ANI(ani_breathing 3000ms linear 0ms infinite);
+}

@@ -1,0 +1,677 @@
+//已视觉稿6为基准
+.px2rem(@name, @px) {
+	@{name}: @px / 75 * 1rem;
+}
+
+:global {
+	.js_may_day_page {
+		height: 100%;
+		margin: 0px;
+		background: white;
+	}
+	.js_may_day_page .am-input-control {
+		width: 100%;
+		line-height: 1rem;
+	}
+	.js_may_day_page .am-list-item {
+		position: absolute;
+		width: 62%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		min-height: 1.5rem;
+		height: 1.5rem;
+		border-radius: 0.3rem;
+		background: white;
+	}
+	.js_may_day_page .am-input-control input {
+		color: #666;
+		font-size: 0.55rem;
+		text-align: center;
+		width: 100%;
+		background: 0;
+		border: 0;
+		height: 40px;
+		//		margin-left		: -1rem;
+	}
+	.js_may_day_page .am-input-control input::-webkit-input-placeholder {
+		font-size: 14px;
+	}
+}
+
+.bg() {
+	height: 100%;
+	background-size: 100% 100%;
+	position: relative;
+	//	max-width			: 600px;
+	//	margin				: auto;
+}
+
+.js_bg1 {
+	background: url(http://img.ishanshan.com/gimg/img/8a1f26408b73af65c06af494a5c13cda!s500) no-repeat center 0;
+	.bg;
+}
+
+.js_bg2 {
+	background: url(http://img.ishanshan.com/gimg/img/79240375502421b6509a016a014083ca!s500) no-repeat center 0;
+	.bg;
+}
+
+.js_bg3 {
+	background: url(http://img.ishanshan.com/gimg/img/901a0637d100cbf2ffd464c8cb3a64e8!s500) no-repeat center 0;
+	.bg;
+}
+
+.js_bg4 {
+	background: url(http://img.ishanshan.com/gimg/img/d099bce9dd9108835d0e1ed16c42a3a1!s500) no-repeat center 0;
+	.bg;
+}
+
+.js_bg5 {
+	background: url(http://img.ishanshan.com/gimg/img/0c15bfb05ffe5744f0fc9fd02b819af9!s500) no-repeat center 0;
+	.bg;
+}
+
+.js_bg6 {
+	background: url(http://img.ishanshan.com/gimg/img/4d4e8e57cb32d38e4a8a47dc935ebbf7!s500) no-repeat center 0;
+	.bg();
+}
+
+.js_bg1_icon {
+	width: 30vw;
+	height: 30vw;
+	top: 5vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	border: white 1px solid;
+	border-radius: 15vw;
+	background-size: 100% 100%;
+}
+
+.js_bg1_title {
+	top: 30vh;
+	width: 80vw;
+	line-height: 12vh;
+	color: #498e5c;
+	font-weight: bold;
+	font-size: 8vw;
+	position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 auto;
+	left: 0px;
+	right: 0px;
+	background: white;
+	border-radius: .3rem;
+}
+
+.js_bg1_text_div {
+	top: 47vh;
+	width: 80vw;
+	line-height: 12vh;
+	color: #666666;
+	font-size: 0.5rem;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 auto;
+	left: 0px;
+	right: 0px;
+	background: white;
+	border-radius: .3rem;
+}
+
+.js_bg1_text {
+	width: 72vw;
+	line-height: 7vw;
+	height: 9vh;
+	margin-left: 5%;
+	overflow: hidden;
+	position: relative;
+	font-size: 4vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.js_bg1_boy_image {
+	background: url(http://img.ishanshan.com/gimg/img/4a4728655b36a182cb28ef41b14c9f15) no-repeat center 0;
+	position: absolute;
+	width: 2rem;
+	height: 33vh;
+	background-size: contain;
+	bottom: -5vh;
+	left: 0rem;
+	opacity: 0;
+	animation: boy_opacity 2s ease;
+	animation-fill-mode: forwards;
+}
+
+.js_bg1_girl_image {
+	background: url(http://img.ishanshan.com/gimg/img/a4a56aa8c7333256442422d5eaf5a3c9) no-repeat center 0;
+	position: absolute;
+	width: 3rem;
+	height: 3rem;
+	background-size: contain;
+	bottom: 0rem;
+	left: 65vw;
+	opacity: 0;
+	animation: girl_opacity 2s ease;
+	animation-fill-mode: forwards;
+}
+
+.js_bg2_title {
+	line-height: 2rem;
+	color: #498e5c;
+	font-weight: bold;
+	font-size: 9vw;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 78%;
+	top: 26vh;
+	border-radius: 0.3rem;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	position: absolute;
+	background: white;
+}
+
+.js_bg2_subdiv_center_fuzzy {
+	height: 38vh;
+	position: absolute;
+	width: 92%;
+	top: 44%;
+	border-radius: 0.5rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: auto;
+	background: white;
+	padding-top: 0.5rem;
+}
+
+.js_bg2_content_key {
+	font-size: 0.4rem;
+	margin-left: 0.4rem;
+	color: #666;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0.3rem;
+	margin-right: 0.3rem;
+	width: 20%;
+	text-align: right;
+	line-height: 0.5rem;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.js_bg2_content_value {
+	font-size: 0.4rem;
+	color: #666;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0.3rem;
+	width: 66%;
+	line-height: 0.5rem;
+}
+
+.js_bg2_boy_image {
+	background: url(http://img.ishanshan.com/gimg/img/769bd8a7ce7bfa01b869f54f5f0bf03e!s150) no-repeat center 0;
+	position: absolute;
+	width: 35vw;
+	height: 35vw;
+	background-size: contain;
+	bottom: 0rem;
+	left: 0rem;
+	opacity: 0;
+	animation: boy2_opacity;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg2_girl_image {
+	background: url(http://img.ishanshan.com/gimg/img/0d3d8dc51c4b258d456b9a7035e8236f!s150) no-repeat center 0;
+	position: absolute;
+	width: 20vw;
+	height: 40vw;
+	background-size: 100% 100%;
+	bottom: 0rem;
+	right: 0rem;
+	opacity: 0;
+	animation: girl2_opacity;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg2_flower1_image {
+	background: url(http://img.ishanshan.com/gimg/img/9a316ee305cc9d322336e0e870ead3fa) no-repeat center 0;
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-size: contain;
+	right: 0rem;
+	left: -1.5rem;
+	margin: auto;
+	bottom: 10vh;
+	animation: flower1_ani;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.js_bg2_flower2_image {
+	background: url(http://img.ishanshan.com/gimg/img/daf526c95810d1dd9cde777371b90102!s100) no-repeat center 0;
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-size: contain;
+	right: -1.5rem;
+	left: 0rem;
+	margin: auto;
+	bottom: 10vh;
+	animation: flower2_ani;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.js_bg3_title {
+	line-height: 2rem;
+	color: #bd5922;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 78%;
+	top: 23%;
+	border-radius: 0.3rem;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	position: absolute;
+	background: white;
+}
+
+.js_bg3_girlanddog_image {
+	background: url(http://img.ishanshan.com/gimg/img/7af19a58cf43d39d62d1243db4fd347a!s300) no-repeat center 0;
+	position: absolute;
+	background-size: contain;
+	right: 10%;
+	margin: auto;
+	bottom: -5rem;
+	animation: girlanddog_ani;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg4_title {
+	line-height: 2rem;
+	color: #bd5922;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 74%;
+	top: 1.5rem;
+	border-radius: 0.3rem;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	position: absolute;
+	background: white;
+}
+
+.js_bg4_photo_div {
+	position: absolute;
+	height: 8rem;
+	top: 30%;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.js_bg4_photo_cover {
+	width: 50%;
+	height: 3.5rem;
+	float: left;
+	background-size: 100% 100%!important;
+}
+
+.js_bg4_girl_image {
+	background: url(http://img.ishanshan.com/gimg/img/91c094533169b36a7e7fc57cf35e5782) no-repeat center 0;
+	position: absolute;
+	width: 3rem;
+	height: 5rem;
+	background-size: contain;
+	right: 0.3rem;
+	margin: auto;
+	bottom: -5rem;
+	animation: girl4_ani;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg4_photo_image {
+	position: relative;
+	border-style: none;
+	top: 0.3rem;
+	left: 0.33rem;
+	height: 87%;
+	width: 85%;
+	border-radius: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	border: white 0.1rem solid;
+}
+
+.js_bg5_content_sub_fuzzy_p {
+	font-size: 0.4rem;
+	text-indent: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	display: block;
+	height: 3.6rem;
+	width: 52%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #666;
+	top: 1.2rem;
+}
+
+.js_bg5_flower_big_image {
+	background: url(http://img.ishanshan.com/gimg/img/0956c9ee6d7c8379cb4ece9822b237b6!s350) no-repeat center 0;
+	position: absolute;
+	width: 70%;
+	height: 50%;
+	background-size: contain;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 52%;
+}
+
+.js_bg5_girl_image {
+	background: url(http://img.ishanshan.com/gimg/img/0503bda6181a0077db1b79b5e0f48e6c!s300) no-repeat center 0;
+	position: absolute;
+	width: 4.5rem;
+	height: 4rem;
+	background-size: 100% 100%;
+	right: 0.3rem;
+	margin: auto;
+	bottom: -5rem;
+	animation: girl5_ani;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg6_p {
+	line-height: 1.8rem;
+	color: #458e5c;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 1.6rem;
+	width: 78%;
+	top: 0.8rem;
+	border-radius: 0.3rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	background: white;
+}
+
+.js_inputbackground_key {
+	position: absolute;
+	top: 3.1rem;
+	background: white;
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	width: 79%;
+	opacity: 0.15;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.js_inputbackground_value {
+	position: absolute;
+	top: 5.1rem;
+	background: white;
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	width: 79%;
+	opacity: 0.15;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.js_inputbackground_submit {
+	position: absolute;
+	top: 7.1rem;
+	width: 79%;
+	height: 1.3rem;
+	right: 0;
+	left: 0;
+	border-radius: 0.2rem;
+	margin: 0 auto;
+	background-position: center;
+	background-size: 100% 100%!important;
+	background: rgb(241, 173, 129);
+	text-align: center;
+	font-size: 0.5rem;
+	line-height: 1.3rem;
+	color: white;
+}
+
+.js_bg6_image1 {
+	background: url(http://img.ishanshan.com/gimg/img/f26a583813e2cb4861829f105e75bc74) no-repeat center 0;
+	position: absolute;
+	width: 3rem;
+	height: 3rem;
+	background-size: contain;
+	right: 2.6rem;
+	margin: auto;
+	top: 60%;
+	opacity: 0;
+	animation: image1_ani;
+	animation-duration: 1.5s;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg6_image2 {
+	background: url(http://img.ishanshan.com/gimg/img/f0db812812997e7616ef0b78b8f65258) no-repeat center 0;
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	background-size: contain;
+	margin: auto;
+	bottom: 3rem;
+	right: -5rem;
+	animation: image2_ani;
+	animation-duration: 1.5s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+}
+
+.js_bg6_image3 {
+	background: url(http://img.ishanshan.com/gimg/img/b07daa1b25481c1e64e3f46d4dbab771) no-repeat center 0;
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-size: contain;
+	margin: auto;
+	bottom: 0rem;
+	left: -2.5rem;
+	animation: image3_ani;
+	animation-duration: 1.5s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+}
+
+.js_inputName {
+	height: 1.5rem;
+	width: 87%;
+	position: absolute;
+	top: 3.1rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	left: 1rem;
+	color: black;
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: r!important;
+}
+
+.js_inputValue {
+	height: 1.5rem;
+	width: 87%;
+	position: absolute;
+	top: 5.1rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	left: 1rem;
+	color: black;
+	font-size: 0.8rem;
+	text-align: center;
+	background: red;
+}
+
+.technicalSupport {
+	font-size: 0.3rem;
+	position: absolute;
+	bottom: 0.2rem;
+	height: 0.3rem;
+	text-align: center;
+	width: 100%;
+	color: #666;
+}
+
+@keyframes boy_opacity {
+	0% {
+		opacity: -0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes girl5_ani {
+	0% {
+		bottom: -5rem;
+	}
+	100% {
+		bottom: 0rem;
+	}
+}
+
+@keyframes image3_ani {
+	0% {
+		left: -2.5rem;
+	}
+	100% {
+		left: 1.5rem;
+	}
+}
+
+@keyframes girl4_ani {
+	0% {
+		bottom: -5rem;
+	}
+	100% {
+		bottom: 0rem;
+	}
+}
+
+@keyframes girlanddog_ani {
+	0% {
+		bottom: -5rem;
+	}
+	100% {
+		bottom: 0rem;
+	}
+}
+
+@keyframes flower2_ani {
+	0% {
+		transform: rotate(-2deg);
+	}
+	50% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(-2deg);
+	}
+}
+
+@keyframes image1_ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes image2_ani {
+	0% {
+		right: -5rem;
+	}
+	100% {
+		right: 0rem;
+	}
+}
+
+@keyframes flower1_ani {
+	0% {
+		transform: rotate(2deg);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}
+	100% {
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes boy2_opacity {
+	0% {
+		opacity: -0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes girl2_opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes girl_opacity {
+	0% {
+		opacity: -0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

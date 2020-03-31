@@ -1,0 +1,10 @@
+/node_modules/*
+
+/dist/*
+/mock/*
+/npm-debug.log*
+/node_modules/
+
+/node_modules.zip
+
+.project

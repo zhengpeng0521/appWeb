@@ -1,0 +1,535 @@
+:global {
+	.vcMask {
+		height : 100%;
+		width : 100%;
+		background-color: rgba(0,0,0,0.8);
+		position: fixed;
+		top: 0px;
+		overflow: auto;
+		z-index: 100;
+	}
+	
+	.VcBox {
+		width: 70%;
+		background: rgb(177,59,91);
+		margin: auto;
+		margin-top: 3.5rem;
+		border-radius: 10px;
+		overflow: hidden;
+		
+		.am-list-item.am-input-item {
+			background-color: rgb(219,106,137);
+			border-radius: 10px;
+		}
+
+		.am-list-item.am-input-item:after {
+			border-bottom: 0px;
+		}
+
+		.am-list-item .am-input-control {
+			line-height: 0.9rem;
+			height: 0.9rem;
+		}
+
+		.am-list-item .am-input-control input {
+			color : #8f315b;	
+			font-size: 0.3rem;
+			text-align: center;
+			line-height: 0.9rem;
+		}
+		
+		.am-list-item .am-input-control input::-webkit-input-placeholder {
+			color : #8f315b;	
+			font-size: 0.3rem;
+			height: 0.9rem;
+			line-height: 0.9rem;
+		}
+	}
+    .submitCode{
+        position: absolute;
+        top: 80%;
+        color: #fff;
+        left: 23%;
+        padding: 1%;
+        border-bottom: solid 2px #fff;
+        line-height: 90%;
+    }
+
+    #myrame{
+        width: 70%;
+        margin-left:15%;
+        margin-top: 11%;
+    }
+    #maskidName{
+        position: fixed;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.8);
+        display: none;
+     }
+    #ParentPage{
+        background: #fff;
+        width: 80%;
+        left: 10%;
+        border-radius: 4%;
+        position: absolute;
+        height: 62%;
+        top: 8%;
+    }
+    #img_min_logo{
+        position: absolute;
+        top: 30%;
+        left: 44%;
+        width: 12%;
+        border: solid 2px #8CBC42;
+        border-radius: 15%;
+    }
+    #btmTxt{
+        text-align: center;
+        padding: 10%;
+    }
+}
+
+.inputBox {
+	width : 70%;
+	margin: auto;
+}
+
+.commonMiddle {
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.commonImageLayout {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat:  no-repeat;
+}
+
+.LayoutMask {
+	height : 100%;
+	width : 100%;
+	background-color: rgba(0,0,0,0.85);
+	position: fixed;
+    top: 0px;
+	overflow: auto;
+	z-index: 100000;
+}
+
+.LayoutMaskBox {
+    width: calc(~"100% - 30px");
+    border: 15px #dd2f63 solid;
+	height: 9.1rem;	
+	margin-top: -0.1rem;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.LayoutGameRuleBox {
+	width : 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+.selectItem {
+	float: left;
+    color: white;
+    padding: 0.25rem;
+    background: #dd2f63;
+    border-radius: 10px;	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 0.4rem;
+	margin-right: 10px;
+}
+
+.noSelectItem {
+	float: left;
+    color: #fdb4ca;
+    padding: 0.2rem;
+	margin-top: 0.1rem;
+    background: #dd2f63;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-right: 10px;
+	background-color: #aa1541;
+}
+
+.LayoutTitleBox {
+	.commonMiddle();
+	width : 100%;
+	height : 1rem;
+	margin: auto;
+	margin-top: 1.5rem;
+}
+
+.baseBox {
+	height : 100%;
+}
+
+.LayouMaskClose {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+	.commonImageLayout();
+	background-image: url(http://img.ishanshan.com/gimg/img/15f382d5011fab83db585b63c53196e4);
+}
+
+.AvtivityCoverImage {
+	//height : 3rem;
+	display: block;
+    width: 90%;
+    margin: auto;
+	background-color: transparent;
+	margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+	margin-top: 0.3rem;
+	.commonImageLayout();
+	background-size: cover;
+}
+
+.ActivityPrizeTitle {
+    font-size: 0.3rem;
+    color: white;
+    width: 90%;
+//    text-indent: 0.5rem;
+    margin: auto;
+    line-height: 0.45rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+	white-space: pre-wrap;
+}
+
+.Qrimage {
+    height: 3rem;
+    width: 3rem;
+    margin: auto;
+    margin-left: 25%;
+    margin-bottom: 0.5rem;
+}
+
+.QrBox {
+    background-color: #dd2f63;
+    height: 7.8rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    position:relative;
+}
+
+.QrTitle {
+    height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 1rem;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    color: yellow;
+}
+
+.UserHelperLeft{
+    font-size: .25rem;
+    height: .9rem;
+    width: 80%;
+    margin: .3rem auto 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.shaoQRC{
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    margin: 0.1rem auto;
+    line-height: 0.1rem
+}
+
+.helperFoot{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: .3rem;
+    color: #fe85aa;
+    margin: 0.35rem auto;
+}
+
+.footerQr{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: .05rem 0;
+    left: 0;
+    color: #FFFFFF;
+    font-size: .32rem;
+}
+
+.QrText {
+	width: 48%;
+    margin: auto;
+    font-size: 0.3rem;
+    text-align: center;
+	color: white;
+	line-height: 0.5rem;
+}
+
+.QrClose {
+	width: 50%;
+    margin: auto;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fec82e;
+    border-radius: 10px;
+    color: #852f15;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: 900;
+}
+
+.ContactBox {
+	height : 3.8rem;
+	width : 80%;
+	background-color: #dd2f63;
+	margin: auto;;
+	margin-top: 3rem;
+    overflow: hidden;
+	border-radius: 20px;
+}
+
+.ContactTitle {
+	color: white;
+	font-size: 0.5rem;
+	text-align: center;
+	margin: auto;
+	font-weight: 900;
+	line-height: 1rem;
+	height: 1rem;
+	margin-top: 0.4rem;
+}
+
+.ContactPhone {
+	color : white;
+	font-size: 0.3rem;
+	margin: auto;
+	text-align: center;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.ContentButtonBox {
+	.commonMiddle();
+	width : 100%;
+	padding-top: 0.2rem;
+}
+
+.ContactCancel {
+	width : 40%;
+	float: left;
+	background-color: #7d57c8;
+	color : white;
+	text-align: center;
+    border-radius: 10px;
+    height: 0.8rem;
+    line-height: 0.8rem;
+	margin-right: 0.5rem;
+	font-weight: 900;
+}
+
+.ContactDetermine {
+	color: #852f15;
+	background-color: #FEC72E;
+	width : 40%;
+	float: left;
+ 	text-align: center;
+    border-radius: 10px;
+    height: 0.8rem;
+    line-height: 0.8rem;
+	font-weight: 900;
+}
+
+.determineImage {
+    height: 6rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+	.commonImageLayout();
+	overflow: hidden;
+	background-image: url(http://img.ishanshan.com/gimg/ori/02c6d6628714affa352ce017c7c47840);
+}
+
+.determineSuccessImage {
+    height: 6rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+	.commonImageLayout();
+	overflow: hidden;
+	background-image: url(http://img.ishanshan.com/gimg/ori/2ec3b29b8335d557d02ffb976909af79);
+}
+
+.commomtext {
+    font-size: 0.4rem;
+    color: white;
+    margin: auto;
+    /* position: relative; */
+    margin-top: 4rem;
+    width: 80%;
+    line-height: 0.6rem;
+    font-weight: 900;
+}
+
+.determineImageText {
+	.commomtext();
+}
+
+.determineCuccessText {
+	.commomtext();
+	text-align: center;
+}
+
+.commonSubmitButton(@color) {
+	width : 45%;
+	height : 1rem;
+	line-height: 1rem;
+	border-radius: 10px;
+	font-size: 0.4rem;
+	text-align: center;
+	font-weight: 900;
+	background-color: @color;
+	
+}
+
+.submitButtonBox {
+	width : 80%;
+	margin: auto;
+	margin-top: 0.5rem;
+}
+
+.submitCancel {
+	color: white;
+	.commonSubmitButton(#7d57c8);
+	float: left;
+}
+
+.submitDetermine {
+	color: #852f15;
+	.commonSubmitButton(#fec82e);
+	float: right;
+}
+
+.bgImage {
+	height: 10rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/ed59df696c066d90612c42e70209f868);
+	.commonImageLayout();
+	overflow: hidden;
+}
+
+.termsText {
+    width: 100%;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    color: white;
+}
+
+.textBox {
+	margin: auto;
+	height : 7.5rem;
+	width : 85%;
+	margin-top: 1rem;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.closeImage {
+	height : 0.6rem;
+	width : 0.6rem;
+	position: absolute;
+    right: 0.5rem;
+    top: 0.8rem;
+	.commonImageLayout();
+	background-image: url(http://img.ishanshan.com/gimg/img/15f382d5011fab83db585b63c53196e4);
+}
+
+.emptyDataPrompt {
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	text-align: center;
+	color: white;
+}
+
+.vcText {
+    font-size: 0.4rem;
+    text-align: center;
+    color: white;
+    padding: 0.3rem;
+    font-weight: 900;
+	margin-top: 0.3rem;
+}
+
+.commonButton {
+    width: 30%;
+    height: 0.7rem;
+    margin-top: 0.5rem;
+    float: left;
+    text-align: center;
+    line-height: 0.7rem;
+    margin-left: 15%;
+    border-radius: 10px;
+	margin-bottom: 0.5rem;
+	font-weight: 900;
+}
+
+.vcString {
+    text-align: center;
+    color: white;
+    font-size: 0.3rem;
+    padding: 0.2rem;
+    font-weight: 900;
+}
+.cancelButton {
+	background-color: rgb(119,85,196);
+	color : white;
+	.commonButton();
+}
+
+.determineButton {
+	.commonButton();
+	float: right;
+	color : rgb(121,51,27);
+	  margin-left: 0%;
+	background-color: rgb(248,203,69);
+    margin-right: 15%;
+}
+
+.qrCodeStyle {
+	width: 3rem;
+    height: 3rem;
+    display: block;
+    margin: 0.6rem auto;
+	background: #dd2f63;
+}
+
+.boxClose{
+    position: absolute;
+    top: -.7rem;
+    right: 0;
+}
+
+.declarationTitle {
+	text-align: center;
+    color: white;
+    position: relative;
+    top: 0.5rem;
+    font-size: 0.4rem;
+}

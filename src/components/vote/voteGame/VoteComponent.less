@@ -1,0 +1,420 @@
+@baseName : voteGameH5;
+
+
+:global {
+
+	.@{baseName} {
+		
+//		--colors : yellow;
+		
+		width : 100%;
+		height : 100%;	
+//		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+
+		.am-button {
+			background-color: transparent;
+    		border: 0PX solid transparent;
+			color : #852f15;
+			font-weight: 900;
+			height: 0.8rem;
+			line-height: 0.8rem;
+		}
+		
+		.am-button.am-button-disabled {
+			color : #852f15;
+			font-weight: 900;
+		}
+		
+		.am-list-view-scrollview {
+			background-color: #432887;
+		}
+		
+		.ListLayout {
+			background-color: #432887;
+		}
+
+		.am-list-item.am-input-item {
+			padding-left: 15px;
+			width : 65%;
+			font-size: 0.3rem;
+			background-color: transparent;
+			color : #b6a5e7;
+			float: left;
+		}
+
+		.am-list-item .am-input-control input {
+			height : 90px;	
+			font-size: 0.27rem;
+			color : #b6a5e7;
+		}
+
+		.am-list-item .am-input-control input::-webkit-input-placeholder {
+			font-size: 0.27rem;
+			color : #b6a5e7;
+		}
+
+		.am-list-item.am-input-item:after {
+			border-bottom: 0px;
+			border-bottom-color: transparent;
+		}
+
+		.am-list-body {
+			border-top : 10px;
+			border-color: transparent;
+			background-color: #432887;
+		}
+
+		.am-list-body:after {
+			border : 0px transparent solid;
+		}
+
+		.am-list-footer:after {
+			border-top : 0px transparent solid;
+		}
+
+		.list-view-section-body {
+			width: 100%;
+			overflow: auto;
+			background: #412a7f;
+		}
+	}
+	
+}
+
+.commonMiddle {
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.commonImageLayout {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat:  no-repeat;
+}
+
+.commonSetWH(@w, @h) {
+	width : @w;
+	height : @h;
+}
+
+.LayoutTitleImage {
+	.commonImageLayout();
+	.commonSetWH(100%, 10rem);
+	overflow: hidden;
+	background-image: url(http://img.ishanshan.com/gimg/ori/515d319dac738f5c5406fa95c8c94073);
+}
+
+.LayouParticipateImage {
+	.commonImageLayout();
+	.commonSetWH(3.5rem, 2.5rem);
+	position: relative;
+    margin: auto;
+    margin-top: 7.4rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/f7b2b913075249f35ccc1a94c98895e4);
+}
+
+.LayouReviewParticipateImage {
+	.commonImageLayout();
+	.commonSetWH(3.5rem, 2.5rem);
+	position: relative;
+    margin: auto;
+    margin-top: 7.4rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/6edbceec558a4c85a84e82768598dba8);
+}
+
+.LayouInstructionsImage {
+	.commonImageLayout();
+	.commonSetWH(1rem, 1.5rem);
+    position: relative;
+    margin: auto;
+    margin-left: 0.3rem;
+    top: -6.3rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/2036e417ea8b8d110e9150bcbcf95684);
+}
+
+.LayouContactImage {
+	.commonImageLayout();
+	.commonSetWH(0.8rem, 0.8rem);
+	position: relative;
+    right: -6.5rem;
+    top: -7.9rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/c39fbf78abb33dfc01baa842fadb637b);
+}
+
+.LayouqrImage {
+	.commonImageLayout();
+	.commonSetWH(0.8rem, 0.8rem);  
+	position: relative;
+    right: -5.6rem;
+    top: -8.7rem;
+	background-image: url(http://img.ishanshan.com/gimg/ori/d3c704ceec4721689b7f5289746be962);
+}
+
+.MainContentText {
+	.commonMiddle();
+	color: #fff;
+//	color : var(--colors, red);
+    position: relative;
+    margin-top: -6rem;
+    width: 70%;
+    margin: auto;
+    margin-top: -6rem;
+    font-size: 0.4rem;
+    font-weight: 900;
+    height: 1.9rem;
+}
+
+.piao {
+	float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+	color: white;
+	font-size: 0.35rem;
+}
+
+.TimeContentText {
+	.commonMiddle();
+	width : 60%;
+	height : 0.6rem;
+	background-color: #2a2d69;
+	color : #9b9ee1;
+	position: relative;
+	font-size: 0.25rem;
+	text-align: center;
+    margin: auto;
+    border-radius: 0.1rem;
+	margin-top: 0.1rem;
+}
+
+.LayoutBlueBoxBg {
+	background-color: #412a7f;
+	width : 100%;
+}
+
+.DataLayout {
+    width: 90%;
+    height: 0.7rem;
+    background: #5232ac;
+    margin: auto;
+    border-radius: 10px;
+	.commonMiddle();
+}
+
+.DataNums {
+	font-size: 0.27rem;
+	float: left;
+	color : #f9e232;
+	line-height: 0.7rem;
+}
+
+.DateLabel {
+	margin: 0px;
+	padding: 0px;
+	color : white;
+	float: left;
+	font-size: 0.27rem;
+}
+
+.LayoutSearch {
+	.commonMiddle();
+	width : 90%;
+	height : 1rem;
+	background-color: #866ccb;
+	margin: auto;
+	margin-top: 0.5rem;
+	border-radius: 10px;
+}
+
+.ButtonSearch {
+    width: 25%;
+    height: 0.8rem;
+    color: white;
+    float: right;
+    line-height: 0.8rem;
+    background: #ee3970;
+    text-align: center;
+    border-radius: 10px;
+	font-weight: 900;
+	font-size: 0.35rem;
+}
+
+.LayoutList {
+	margin-top: 0.3rem;
+	height: 8rem;
+	padding-bottom: 1rem;
+    overflow: auto;
+}
+
+.ListItem {
+	width : 42%;
+	background-color: #5232ac;
+	float: left;
+	margin-top: 0.3rem;
+    margin-left: 5.5%;
+	border-radius: 10px;
+	padding-bottom: 0.2rem;
+	
+}
+
+.RankingNum {
+	width : 45%;
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	height : 0.4rem;
+	background-color: #3d1a82;
+	color : #f9e232;
+    font-size: 0.2rem;
+    margin-top: 0.1rem;
+	line-height: 0.4rem;
+    text-align: center;
+	font-weight: 900;
+}
+
+.CoverImage {
+	width : 90%;
+	height : 2.7rem;
+	background-color: #cec3c3;
+	margin: auto;
+    border-radius: 10px;
+	margin-top: 0.15rem;
+	overflow: hidden;
+	.commonImageLayout();
+	background-size: cover;
+}
+
+.UserName {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    bottom: -2.2rem;
+    text-align: center;
+    color: white;
+    line-height: 0.5rem;
+	overflow: hidden;
+	font-size: 0.25rem;
+}
+
+.Number {
+    color: white;
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+    width: 40%;
+    margin-left: 7%;
+	float: left;
+	padding-bottom: 0.2rem;
+}
+
+.VotesBox {
+	float: left;
+    width: 45%;
+    margin-top: 0.2rem;
+    line-height: 0.3rem;
+}
+
+.Votes {
+	float: right;
+    color: #f9e232;
+    font-size: 0.34rem;
+	margin-top: 20px;
+    margin-right: 5px;
+}
+
+.VotesAni {
+	float: right;
+    color: #f9e232;
+    font-size: 0.34rem;
+	//animation: textAni;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;	
+} @keyframes textAni {
+	0%{transform: translateY(0rem); opacity: 1;}
+	100%{transform: translateY(-0.5rem); opacity: 0;}
+}
+
+.VoteButton {
+    width: 70%;
+    height: 0.8rem;
+    background-color: #fec82e;
+    color: #852f15;
+    text-align: center;
+    line-height: 0.8rem;
+    clear: both;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 0.1rem;
+    font-weight: 900;
+    font-size: 0.4rem;
+}
+
+.LayoutMask {
+	height : 100%;
+	width : 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+    top: 0px;
+}
+
+.LayoutMaskBox {
+    width: calc(~"100% - 30px");
+    border: 15px #dd2f63 solid;
+	min-height: 8rem;	
+	margin-top: -0.1rem;
+}
+
+.selectItem {
+	float: left;
+    color: white;
+    padding: 0.3rem;
+    background: #dd2f63;
+    border-radius: 10px;	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 0.4rem;
+	margin-right: 10px;
+}
+
+.noSelectItem {
+	float: left;
+    color: white;
+    padding: 0.2rem;
+    background: #dd2f63;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-right: 10px;
+}
+
+.LayoutTitleBox {
+	.commonMiddle();
+	width : 100%;
+	height : 1rem;
+	margin: auto;
+	margin-top: 1.5rem;
+}
+
+.emptyData {
+    height: 3rem;
+    width: 100%;
+    background-color: #412782;
+}
+
+.emptyImage {
+	height: 2rem;
+	width : 2rem;
+	.commonImageLayout();
+	background-image: url(http://img.ishanshan.com/gimg/img/85c59304b38975228d31319638df2f3a);
+	margin: auto;
+	margin-top: 1rem;}
+
+.emptyText {
+	margin: auto;
+	text-align: center;
+	font-size: 0.3rem;
+	color : #866cc2;
+	padding: 0.2rem;
+    margin-bottom: 1rem;
+}

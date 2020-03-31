@@ -1,0 +1,307 @@
+@import '../../common/commonLess/HomeAndSchool.less';
+
+/*公用*/
+/*公用*/
+.person_center_wrap{
+	position : relative;
+	width : 100%;
+	height : 100%;
+}
+.person_center_bg{
+	width : 100%;
+	height : 200px;
+	background : url('http://img.ishanshan.com/gimg/img/b326ff101a74255bd987335e8918cbd1!s300') center center;
+	background-size : cover;
+}
+/*回到首页 按钮*/
+.home_btn{
+	position : absolute;
+	top : 20px; left : 20px;
+	width : 64px;
+	height : 64px;
+	background : url('http://img.ishanshan.com/gimg/img/189bdf1de3920086f45b8c4a2aa7bbd2!s300');
+	background-size : cover;
+}
+
+/*内容*/
+.person_center_box{
+	position : absolute;
+	top : 200px; left : 0;
+	width : 100%;
+	min-height : calc( ~'100% - 200px' );
+	background : @base_bg_color;
+}
+.person_center_box::before{
+	position : absolute;
+	top : -83px;
+	content : '';
+	display : block;
+	width : 100%;
+	height : 83px;
+	background : url('http://img.ishanshan.com/gimg/img/ff68221b034590ec2dee5ce00d079fa5!s300') center center;
+	background-size : 100% 100%;
+}
+.person_head_img_bg{
+	position : absolute;
+	margin : auto; left : 0; right : 0;
+	top : -166px;
+    width : 166px;
+	height : 166px;
+    border-radius : 50%;
+	background-image : url('http://img.ishanshan.com/gimg/img/98a35ae1305b27fe86d1491b3fc1ead2!s300');
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center;
+}
+.person_head_img{
+	position : absolute;
+	margin : auto; left : 0; right : 0;
+	top : -158px;
+    width : 150px;
+	height : 150px;
+    border-radius : 50%;
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center;
+}
+.person_name{
+	margin : 30px auto 20px;
+	font-weight : bold;
+	text-align : center;
+	font-size : 32px;
+	color : @base_font_color;
+}
+.person_info{
+	margin : 0;
+	text-align : center;
+	font-size : 28px;
+	color : @label_font_color;
+}
+.stu_img_list{
+	position : relative;
+	width : calc( ~'100% - 90px' );
+	height : 100px;
+	margin : 40px auto 0;
+	padding : 0 45px 72px;
+}
+.stu_img_list_box{
+	width : 100%;
+	height : 172px;
+	text-align : center;
+	overflow-x : auto;
+	overflow-y : hidden;
+	white-space : nowrap;
+}
+.stu_img_list_item, .stu_img_list_add{
+	position : relative;
+	display : inline-block;
+	vertical-align : top;
+	margin-right : 40px;
+	width : 100px;
+	height : 172px;
+}
+.stu_img_list_item{
+	overflow : hidden;
+}
+.stu_img_list_item_img{
+	position : relative;
+	width : 100px;
+	height : 100px;
+	border-radius : 50%;
+//	border : 4px solid @base_color;
+	box-sizing : border-box;
+	background-size : cover;
+	background-position : center center;
+	overflow : hidden;
+}
+.stu_img_list_add{
+	border : none;
+	margin-right : 0;
+}
+.stu_name{
+	position : relative;
+	width : 100%;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	white-space : nowrap;
+	height : 22px;
+	line-height : 22px;
+	padding : 0;
+	margin : 0;
+	margin-top : 10px;
+	font-size : 22px;
+	color : #666;
+}
+.stu_special_name{
+	position : relative;
+	left : -85px;
+	width : 100%;
+	height : 22px;
+	line-height : 22px;
+	padding : 0;
+	margin : 0;
+	margin-top : 10px;
+	font-size : 22px;
+	color : #666;
+}
+.selected_flag{
+	position : absolute;
+	left : 30px;
+	bottom : -1px;
+	width : 0;
+    height : 0;
+    border-left : 20px solid transparent;
+    border-right : 20px solid transparent;
+    border-bottom: 25px solid #f3f3f3;
+}
+.stu_sex_male{
+	width : 37px;
+	height : 47px;
+	background : url('http://img.ishanshan.com/gimg/img/2dabc4ff61e3d43fb6fab067fbaa2f0f!s300') center center;
+	background-size : cover;
+}
+.stu_sex_female{
+	width : 37px;
+	height : 47px;
+	background : url('http://img.ishanshan.com/gimg/img/9851b80b525b94126bda9d514fbf4993!s300') center center;
+	background-size : cover;
+}
+.stu_vip{
+	position : absolute;
+	bottom : 67px;
+	right : 5px;
+	width : 20px;
+	height : 20px;
+	background : url('http://img.ishanshan.com/gimg/img/a7234fb701cb2153aa80232defdf983c!s300') center center;
+	background-size : cover;
+}
+.icon_left{
+	position : absolute;
+	top : 40px;
+	left : 10px;
+	font-size : 20px;
+}
+.icon_right{
+	position : absolute;
+	top : 40px;
+	right : 10px;
+	font-size : 20px;
+}
+/*会员权利*/
+.vip_rights, .no_vip_box{
+	width : calc( ~'100% - 52px' );
+	margin : 0 10px 40px;
+	padding : 16px;
+	background : #f3f3f3;
+	border-radius : 12px;
+	font-size : 0px;            //处理inline-block导致的空隙
+}
+.vip_rights_top{
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    min-height: 200px;
+}
+.vip_rights_item{
+	position : relative;
+	display : inline-block;
+	margin-right : 10px;
+	height : 168px;
+	//width : calc( ~'25% - 7.5px' );
+    width:calc(~'(100% - 30px)/4');
+	background : #fff;
+	border-radius : 12px;
+    margin-bottom : 10px;
+}
+.vip_rights_item:nth-child(4n){
+    margin-right : 0px;
+}
+.vip_rights_item:last-child{
+	margin-right : 0;
+}
+.vip_rights_item_icon{
+	position : absolute;
+	margin : auto; left : 0; right : 0;
+	top : 20px;
+	width : 90px;
+	height : 90px;
+	background-size : cover;
+	background-position : center center;
+}
+.vip_rights_item_icon img{
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+.vip_rights_item_label{
+	position : absolute;
+	margin : auto; left : 0; right : 0;
+	text-align : center;
+	top : 115px;
+	height : 28px;
+	line-height : 28px;
+	font-size : 22px;
+	color : #666;
+}
+
+/*全部权利*/
+.all_rights_item{
+	position : relative;
+	width : 100%;
+	height : 88px;
+	line-height : 88px;
+	background : #f9f9f9;
+}
+.all_rights_item_icon{
+	position : absolute;
+	top : 21px;
+	left : 30px;
+	width : 46px;
+	height : 46px;
+	background-size : cover;
+
+}
+.all_rights_item_label{
+	display : inline-block;
+	font-size : 30px;
+	margin-left : 96px;
+	color : #333;
+}
+.all_rights_item_arrow{
+	font-size : 20px;
+	position : absolute;
+	right : 30px;
+	top : 34px;
+}
+.all_rights_item_line{
+	width : calc( ~'100% - 60px' );
+	border-bottom : 1px solid #ddd;
+	margin-left : 30px;
+}
+
+/*宝宝为非会员*/
+.no_vip_box_label{
+	height : 22px;
+	margin : 40px auto;
+    line-height : 22px;
+    font-size : 22px;
+	text-align : center;
+	color : #999;
+}
+.edit_baby_info_btn{
+	width : 240px;
+	margin : 0 auto 40px;
+	color : #5d9cec;
+	text-align : center;
+}
+
+
+.model_vip_right{
+	position : absolute;
+	top : 0 ; right : 0;
+	width : 70px;
+	height : 70px;
+	background-image : url('http://img.ishanshan.com/gimg/img/1b477b0039099430554571f4e0d96745');
+	background-size : cover;
+	background-repeat : no-repeat;
+}

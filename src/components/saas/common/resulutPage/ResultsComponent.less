@@ -1,0 +1,39 @@
+:global {
+	.results {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.resultsBox {
+	height: 7rem;
+	width : 100%;
+}
+
+.commonResults {
+	width : 5rem;
+	height: 5rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+}
+
+.successImage {
+	.commonResults();	
+	background-image: url(http://img.ishanshan.com/gimg/img/fc4a1c57d1958d92c6a96e08af8f63ad);
+}
+
+.failImage {
+	.commonResults();	
+	background-image: url(http://img.ishanshan.com/gimg/img/7889a7b4b265c68fcae2de53e21325e2);
+}
+
+.resultsString {
+	font-size: 1rem;
+	color : #333;
+	margin-top: 10px;
+}

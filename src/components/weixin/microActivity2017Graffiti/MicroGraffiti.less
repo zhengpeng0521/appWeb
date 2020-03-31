@@ -1,0 +1,122 @@
+@base_name : graffiti;
+@import '../../common/commonLess/CommonLess.less';
+:global {
+	.@{base_name} {
+		& {
+			min-height : 100%;
+			width : 100%;
+			margin: 0px;
+			background-color: white;
+			overflow: hidden;
+		}
+		.am-input-control input {
+			color: #888;
+			font-size: 0.35rem;
+			text-align: center;
+			width: 75%;
+			background: 0;
+			border: 0;
+			height: 1rem;
+		}
+		.am-modal-mask {
+			opacity: 0.5;
+		}
+		.am-input-control input::-webkit-input-placeholder {
+			font-size: 0.35rem;
+			color: #888;
+		}
+		.am-list-item {
+			width: 100%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			min-height: 1rem;
+			height: 1rem;
+			background: 0;
+			padding: 0px;
+		}
+		.am-list-item.am-input-item:after {
+			border-bottom: 0px;
+		}
+		.am-input-control {
+			width: 100%;
+			line-height: 1rem;
+		}
+		.am-list-item.am-list-item-middle .am-list-line {
+			justify-content: center;
+			padding: 0px;
+		}
+		.am-list-item .am-list-line .am-list-arrow-horizontal {
+			visibility: hidden;
+		}
+		.am-list-item .am-list-line .am-list-extra {
+			-webkit-flex-basis: 100%;
+			flex-basis: 100%;
+			text-align: center;
+			text-overflow: '';
+			font-size: 0.35rem;
+			margin-left: 50px;
+		}
+	}
+}
+
+.button_div {
+	height: 1.2rem;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.start_button {
+    height: 0.7rem;
+    width: 30%;
+    margin: 10px;
+}
+
+.eraser {
+	padding: 0px 0px 20px 20px;
+	font-size: 0.4rem;
+    color: #2b2a2a;
+    float: left;
+	margin: 20px;
+}
+
+.eraser_size {
+	width : 0.5rem;
+	height : 0.5rem;
+	margin: 20px 0px 20px 20px;
+	float: left;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.canvas_bg_color {
+	clear: left;
+    margin: 20px;
+	font-size: 0.4rem;
+    color: #2b2a2a;
+    padding: 10px 0px 20px 20px;
+}
+
+.color_item {
+	width : 0.5rem;
+	height : 0.5rem;
+	float: left;
+	margin-left: 0.5rem;
+	border-radius: 50%;
+}
+
+.technicalSupport {
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	color: #000;
+	margin: 0px;
+}
+
+.copy_img {
+	margin-top: 0.5rem;
+}

@@ -1,0 +1,95 @@
+
+.read_me{
+  background: #fff;
+  padding: 0 0.4rem;
+}
+
+.common_box{
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid #ddd;
+
+  &:last-child{
+    border: none;
+  }
+
+  .box_left{
+    position: relative;
+
+    .box_icon{
+      position: absolute;
+      right: -5px;
+      bottom: 0;
+      color: #FA4816;
+    }
+
+    .box_icon_right{
+      position: absolute;
+      right: -5px;
+      bottom: 0;
+      color: #25C154;
+    }
+  }
+
+  .box_right{
+    margin-left: 1.8rem;
+  }
+}
+
+.bind_container{
+  position: relative;
+  height: 100%;
+}
+
+.image_btn_box{
+  width: ~'calc(100% - 60px)';
+  position: absolute;
+  bottom: 2rem;
+}
+
+// 将ImagePicker覆盖在按钮上并隐藏
+// .image_btn{
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   opacity: 0;
+
+//   div{
+//     margin: 0 !important;
+//     padding: 0 !important;
+//   }
+
+//   :global{
+//     .am-image-picker-list .am-image-picker-upload-btn{
+//       width: 100% !important;
+//       height: 84px !important;
+//     }
+//     .am-image-picker-list .am-image-picker-upload-btn input{
+//       width: 100% !important;
+//       height: 84px !important;
+//     }
+//   }
+// }
+
+.image_btn{
+  width: 100%;
+  height: 84px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  opacity: 0;
+  *display: inline;
+  *zoom: 1;
+
+  input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+  }
+}

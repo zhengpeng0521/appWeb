@@ -1,0 +1,110 @@
+@import '../../common/commonLess/HomeAndSchool.less';
+
+.contract_detail_wrap{
+	width : 100%;
+	height : 100%;
+}
+.contract_detail_box_top{
+	position : relative;
+	width : 100%;
+	height : 200px;
+	background : url('http://img.ishanshan.com/gimg/img/e4794e22c2ffbb3bf63c4191e5be327b!s300' );
+	background-size : 100% 100%;
+
+}
+.contract_detail_box_middle{
+	position : relative;
+	width : 100%;
+	padding-bottom : 150px;
+	background : url('http://img.ishanshan.com/gimg/img/f3c5adcb64adf557420f5d22a88ffc36!s300');
+	background-repeat : repeat-y;
+	background-size : 100%;
+}
+.contract_detail_box_middle::before{
+	content : '';
+	position : absolute;
+	bottom : -10px;
+	right : 70px;
+	width : 111px;
+	height : 162px;
+	background : url('http://img.ishanshan.com/gimg/img/cfa7452e9e5d338737aa810d21baba97!s300');
+	background-size : cover;
+}
+.contract_detail_box_middle_box{
+	position : relative;
+	width : calc( ~'100% - 100px' );
+	margin : 0 auto;
+	top : -50px;
+	padding-bottom : 30px;
+	border-bottom : 1px solid #ddd;
+}
+.contract_detail_box_middle_product{
+	position : relative;
+	top : -30px;
+	width : calc( ~'100% - 100px' );
+	margin : 0 auto;
+	padding-bottom : 30px;
+	border-bottom : 1px solid #ddd;
+}
+.contract_detail_box_middle_footer{
+	position : relative;
+	width : calc( ~'100% - 100px' );
+	margin : 0 auto;
+}
+.contract_detail_product_header{
+	list-style : none;
+	margin : 0;
+	padding : 0;
+	width : 100%;
+	height : 24px;
+	line-height : 24px;
+}
+.product_header_item{
+	display : inline-block;
+	width : 25%;
+	color : #999;
+	font-size : 24px;
+	text-align: center;
+}
+.contract_detail_product{
+	list-style : none;
+	margin : 20px 0 0 0;
+	padding : 0;
+	width : 100%;
+	line-height : 24px;
+}
+.product_item{
+	display : inline-flex;
+	width : 25%;
+	color : #666;
+	font-size : 24px;
+}
+.contract_detail_box_footer{
+	width : 100%;
+	height : 70px;
+	background : url('http://img.ishanshan.com/gimg/img/d85c087a1f7a899e3a973e0aeae46e9a!s300');
+	background-size : 100% 100%;
+}
+
+.contract_order_number{
+	position : absolute;
+	width : calc( ~'100% - 160px' );
+	top : 55px;
+	left : 50px;
+	font-size : 28px;
+	color : #fff;
+}
+
+.contract_detail_box_item{
+	font-size : 24px;
+	margin-bottom : 20px;
+}
+.contract_detail_box_item:last-child{
+	margin-bottom : 0;
+}
+.contract_detail_item_label{
+	color : #999;
+}
+.contract_detail_item_value{
+	color : #666;
+}

@@ -1,0 +1,613 @@
+@base_name : tech_base_div;
+@text_color : white;
+@import '../../common/commonLess/CommonLess.less';
+.kuang1(@height : 3.6rem) {
+	background-image: url(http://img.ishanshan.com/gimg/ori/c8bfaa6657e816e8fd3ae13773640ca4);
+	width: 90%;
+	height: @height;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+}
+
+.kuang2(@top : 0px, @height : 3.6rem) {
+	background-image: url(http://img.ishanshan.com/gimg/ori/d238c44bbc6d081909c058b571369f82);
+	width: 90%;
+	top: @top;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	display: block;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.kuang3(@top : 0px, @height : 3.6rem) {
+	background-image: url(http://img.ishanshan.com/gimg/ori/95d53fce1b3266cc5eab1c07ef3986a7);
+	width: 90%;
+	height: @height;
+	top: @top;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.xq_ani(@rotate, @url @s) {
+	background: @url;
+	background-size: cover;
+	background-repeat: repeat;
+	border-radius: 50%;
+	position: absolute;
+	transform: rotate(@rotate);
+	animation: xq @s linear infinite;
+}
+
+.geaeral_line(@height : 49px) {
+	width: 100%;
+	height: @height;
+	background: url(http://img.ishanshan.com/gimg/ori/beea89815d6c1c2d4907560fca2d45d2);
+	background-size: 100% 100%;
+	animation: line_flashing_ani 1s infinite;
+}
+
+:global {
+	.@{base_name} {
+		& {
+			margin: 0px;
+		}
+		& .am-input-control input {
+			color: #ffffff;
+			font-size: 0.45rem;
+			text-align: center;
+			width: 75%;
+			background: 0;
+			border: 0;
+			height: 40px;
+		}
+		& .am-modal-mask {
+			opacity: 0.5;
+		}
+		& .am-input-control input::-webkit-input-placeholder {
+			font-size: 14px;
+		}
+		& .am-list-item {
+			position: absolute;
+			width: 55%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			min-height: 1.5rem;
+			height: 1.5rem;
+			border-radius: 0.3rem;
+			background: 0;
+		}
+		& .am-input-control {
+			width: 100%;
+			line-height: 1rem;
+		}
+	}
+}
+
+.bg {
+	background: url(http://img.ishanshan.com/gimg/ori/ee300a0a2388413320ef4a49cc6f598a) repeat center 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.spacecraft {
+	width: 80%;
+	height: 5rem;
+	margin: auto;
+	background: url(http://img.ishanshan.com/gimg/img/ada70462767cc0ae4de014713b70315c) no-repeat center 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	z-index: 1000;
+	position: relative;
+}
+
+.orginfo_p {
+	width: 100%;
+	max-height: 2.4rem;
+	overflow: hidden;
+}
+
+.background_header {
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 1.1rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	left: -27px;
+	right: 0;
+	margin: 0 auto;
+	top: 1.37rem;
+	z-index: 5000;
+}
+
+.spacecraft_fire {
+	background-image: url(http://img.ishanshan.com/gimg/ori/7941dd23dfb35126d62c7b3bfaf8b72c);
+	right: 1%;
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 1.7rem;
+	.general_img_attribute();
+	.animation_value(spacecraft_fire_ani 1s infinite);
+	.animation_timing_value(ease);
+}
+
+.background_title {
+	width: 75%;
+	line-height: 1rem;
+	border: 9px #599df3 solid;
+	text-align: center;
+	font-size: 0.65rem;
+	font-weight: 900;
+	margin: auto;
+	margin-left: 10%;
+	margin-top: -1rem;
+	border-radius: 10px;
+	padding: 3%;
+	color: @text_color;
+	background-color: #0a5ca7;
+}
+
+.background_planet_kuang1_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/c8bfaa6657e816e8fd3ae13773640ca4);
+	width: 90%;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: -6rem;
+	height: 2rem;
+	position: relative;
+	display: block;
+}
+
+.background_planet_kuang2_image_p {
+	margin: 0px;
+	color: @text_color;
+	width: 83%;
+	margin-left: 10%;
+	text-align: left;
+	line-height: 0.45rem;
+	text-indent: 0.5rem;
+	font-size: 0.3rem;
+}
+
+.introduction_kuang_sub_title {
+	margin-top: 0.5rem;
+	color: @text_color;
+	width: 80%;
+	margin-left: 11%;
+	z-index: 100;
+	line-height: 0.4rem;
+	font-size: 0.3rem;
+	//	.text_middle();
+	display: flex;
+	flex-wrap: wrap;
+	text-indent: .5rem;
+	text-align: left;
+	display: block;
+}
+
+.introduction_image {
+	margin-top: 0.3rem;
+	width: 81%;
+	height: 3rem;
+	margin-left: 11%;
+	background: white;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 100;
+	border-radius: 10px;
+}
+
+.background_contact_kuang1_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/c8bfaa6657e816e8fd3ae13773640ca4);
+	width: 90%;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.background_kuang1_image {
+	.kuang1(2rem);
+}
+
+.background_kuang2_image {
+	.kuang2(1rem);
+}
+
+.background_kuang3_image {
+	.kuang3(0rem, 2rem);
+}
+
+.background_sub_title {
+	width: 83%;
+	position: absolute;
+	left: 10%;
+	height: 2.6rem;
+	z-index: 100;
+	color: @text_color;
+	font-size: 0.5rem;
+	font-weight: 900;
+	text-align: center;
+	.text_middle();
+}
+
+.background_planet_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/cdd6e2114670e60db33bd389df8dc873);
+	width: 100%;
+	height: 9rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.background_planet_kuang2_image {
+	.kuang2();
+	//	position: relative;
+	//	z-index: 100;
+}
+
+.background_planet_kuang3_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/95d53fce1b3266cc5eab1c07ef3986a7);
+	position: relative;
+	width: 90%;
+	height: 1.6rem;
+	//	top: -0.5px;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.planet_kuang_sub_title {
+	position: absolute;
+	color: @text_color;
+	font-size: 30px;
+	width: 80%;
+	left: 11%;
+	z-index: 100;
+	.text_middle();
+}
+
+.planet_kuang_title {
+	font-size: 1rem;
+	font-weight: 900;
+	margin-top: 20px;
+	color: @text_color;
+	font-size: 0.7rem;
+	width: 84%;
+	margin-left: 10%;
+	.text_middle();
+}
+
+.background_introduction_kuang1_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/c8bfaa6657e816e8fd3ae13773640ca4);
+	width: 90%;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.background_introduction_kuang2_image {
+	.kuang2(0px, 1.6rem);
+	overflow: hidden;
+	position: relative;
+}
+
+.background_introduction_kuang3_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/95d53fce1b3266cc5eab1c07ef3986a7);
+	width: 90%;
+	margin: auto;
+	height: 1.1rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: auto;
+	position: relative;
+	z-index: 100;
+}
+
+.background_contact_kuang2_image {
+	.kuang2(0px, 20%);
+	position: relative;
+}
+
+.background_contact_kuang3_image {
+	background-image: url(http://img.ishanshan.com/gimg/ori/95d53fce1b3266cc5eab1c07ef3986a7);
+	width: 90%;
+	height: 2.6rem;
+	margin: auto;
+	margin-top: -1rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.background_contact_kuang4_image {
+	.kuang2(0px, 13%);
+}
+
+.content_div {
+	margin-top: 20px;
+	width: 100%;
+	z-index: 100;
+	flex-direction: column;
+	.text_middle();
+}
+
+.content_p {
+	padding: 5px;
+	color: @text_color;
+	width: 100%;
+	font-size: 0.3rem;
+	width: 80%;
+	text-align: left;
+	text-indent: 0.4rem;
+}
+
+.contact_div {
+	width: 83%;
+	margin-left: 10%;
+	z-index: 100;
+	flex-direction: column;
+	padding-top: 40px;
+}
+
+.contact_p {
+	min-height: 40px;
+	color: @text_color;
+	font-size: 0.3rem;
+	width: 100%;
+}
+
+.contact_label {
+	float: left;
+	width: 30%;
+	min-height: 0.3rem;
+	line-height: 0.45rem;
+	font-size: 0.3rem;
+	margin: 0px;
+	text-align: center;
+}
+
+.contact_value {
+//	float: left;
+	width: 100%;
+	min-height: 0.3rem;
+	line-height: 0.45rem;
+	font-size: 0.3rem;
+	margin: 0px;
+	text-indent: 0.4rem;
+}
+
+.qr_code {
+	font-size: 30px;
+	width: 3rem;
+	height: 3rem;
+	background: white;
+	margin-left: 10%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	margin-top: 1rem;
+	z-index: 100;
+	text-align: center;
+	float: left;
+}
+
+.qr_text {
+	color: white;
+	z-index: 100;
+	margin-left: 10%;
+	width: 3rem;
+	text-align: center;
+	font-size: 0.3rem;
+	padding-top: 20px;
+}
+
+.robot {
+	background-image: url(http://img.ishanshan.com/gimg/ori/3a2989f1c4225edd46ffbeef0b6bd501);
+	width: 377px;
+	height: 377px;
+	margin-top: 1.5rem;
+	z-index: 100;
+	position: absolute;
+	right: 0rem;
+	animation: robot_ani 1500ms steps(25) infinite;
+}
+
+.xq1 {
+	width: 2rem;
+	height: 2rem;
+	top: 20rem;
+	left: -1rem;
+	.xq_ani(10deg, url(http://img.ishanshan.com/gimg/ori/f538af956b587ac2b57d569ca18e7b17), 8s);
+}
+
+.xq2 {
+	width: 1.5rem;
+	height: 1.5rem;
+	top: 27rem;
+	right: -.75rem;
+	.xq_ani(160deg, url(http://img.ishanshan.com/gimg/ori/6aad6a3f9cb541b41dbd0fa63c67c2dc), 10s);
+}
+
+.xq3 {
+	width: 1.5rem;
+	height: 1.5rem;
+	top: 76%;
+	left: -0.75rem;
+	.xq_ani(-10deg, url(http://img.ishanshan.com/gimg/ori/4c59e7396d7a41be5f81f68c106ad66a), 14s);
+}
+
+.xq4 {
+	width: 1.5rem;
+	height: 1.5rem;
+	top: 86%;
+	right: -0.75rem;
+	.xq_ani(0deg, url(http://img.ishanshan.com/gimg/ori/6d2172847d32e569b2830836d2d781a9), 20s);
+}
+
+.star {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(http://img.ishanshan.com/gimg/ori/696533826e5d3a530aad44e86283b291);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	animation: star_ani1 2s linear infinite;
+	z-index: 400;
+}
+
+.star_stop {
+	width: 20px;
+	height: 20px;
+	top: 8.5rem;
+	right: 2rem;
+	background: url(http://img.ishanshan.com/gimg/ori/a14c2f3cc57ce190f78b76e0744ae5d7);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	animation: star_stop_ani2 2s linear infinite;
+}
+
+.star_2 {
+	width: 1rem;
+	height: 1rem;
+	background: url(http://img.ishanshan.com/gimg/ori/696533826e5d3a530aad44e86283b291);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	animation: star_ani2 2s linear infinite;
+	z-index: 400;
+}
+
+.line_flashing {
+	.geaeral_line(53px);
+	position: relative;
+	top: -10px;
+}
+
+.line_flashing1 {
+	.geaeral_line(42px);
+}
+
+.line_flashing2 {
+	.geaeral_line(53px);
+	position: relative;
+	top: 8px;
+}
+
+.line_flashing4 {
+	.geaeral_line(53px);
+	position: relative;
+	top: -3px;
+}
+
+@keyframes robot_ani {
+	0% {
+		background-position: -0px 0px;
+		right: 0rem;
+	}
+	50% {
+		background-position: -0px 0px;
+		right: 0.3rem;
+	}
+	100% {
+		background-position: 10000px 0px;
+		right: 0rem;
+	}
+}
+
+@keyframes line_flashing_ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes star_stop_ani2 {
+	0% {
+		transform: scale(1) rotate(40deg);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.2) rotate(40deg);
+		opacity: 0.7;
+	}
+	80% {
+		transform: scale(1) rotate(40deg);
+		opacity: 0.3;
+	}
+	100% {
+		transform: scale(0.8) rotate(40deg);
+		opacity: 0.9;
+	}
+}
+
+@keyframes star_ani1 {
+	from {
+		top: 1rem;
+		left: 10rem;
+		opacity: 1;
+	}
+	to {
+		top: 10rem;
+		left: 0rem;
+		opacity: 0.2;
+	}
+}
+
+@keyframes star_ani2 {
+	from {
+		top: 2rem;
+		left: 8rem;
+		opacity: 1;
+	}
+	to {
+		top: 8rem;
+		left: -5rem;
+		opacity: 0.2;
+	}
+}
+
+@keyframes xq {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: 200%;
+	}
+}
+
+@keyframes spacecraft_fire_ani {
+	0% {
+		height: 0.8rem;
+		width: 0.8rem;
+		right: 1%;
+		top: 1.7rem;
+	}
+	50% {
+		height: 0.8rem;
+		width: 1.5rem;
+		right: -8%;
+		top: 1.7rem;
+	}
+	100% {
+		height: 0.8rem;
+		width: 0.8rem;
+		right: 1%;
+		top: 1.7rem;
+	}
+}

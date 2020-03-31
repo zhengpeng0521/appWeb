@@ -1,0 +1,458 @@
+@import '../../common/commonLess/CommonLess.less';
+@import '../../common/commonLess/AnimationLibKey.less';
+
+@base_name : base_school_would_be_starting_second;
+@text_color : #999;
+:global {
+	.@{base_name} {		
+		height: 100%;
+		margin: 0px;
+		overflow: hidden;
+		
+		.am-list-item {
+			min-height: 0.8rem;
+			height: 0.8rem;
+			background: 0;
+		}
+		.am-list-item.am-input-item {
+			background: 0;
+		}
+		.am-list-item .am-input-control input {
+			font-size: 0.35rem;
+			text-align: center;
+			color: @text_color;
+		}
+		.am-list-item .am-input-control input::-webkit-input-placeholder {
+			font-size: 0.35rem;
+			color: @text_color;
+		}
+		.am-list-item.am-input-item:after {
+			border-bottom: 0px;
+		}
+		.am-list-item .am-list-line {
+			min-height: 0.8rem;
+			display: -webkit-inline-box;
+		}
+		.am-list-item .am-list-line .am-list-extra {
+			font-size: 0.35rem;
+			text-align: center;
+			width: 100%;
+			color: @text_color;
+		}
+		.am-list-item .am-list-line .am-list-arrow {
+			width: 0px;
+			height: 0px;
+		}
+	}
+}
+
+.setWH(@w, @h) {
+	width : @w;
+	height: @h;
+}
+
+.commonTitleImage {
+    margin: auto;
+    margin-top: 0.8rem;
+	.setWH(70%, 1.2rem);
+	.common_image(url(http://img.ishanshan.com/gimg/ori/9f91b3ae1b14a2c373a1b95a69a1177d));
+}
+
+
+.commonText(@top) {
+    width: 80%;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: 900;
+    color: #2c2f24;
+    margin: auto;
+    line-height: 1rem;
+    height: 1rem;	
+}
+
+
+.common_background_image(@url:'') {
+	height : 100%;
+	width : 100%;
+	background-image: @url;
+	background-color: white;
+	.general_img_attribute();
+	overflow: hidden;
+}
+
+.common_image(@url : '') {
+	background-image: @url;
+	.general_img_attribute();
+}
+
+/*第一页*/
+.background_page1_image {
+	.common_background_image(url(http://img.ishanshan.com/gimg/ori/f4f554471f7c51e7d17bf85cab97c1e6));
+}
+
+.pageOneKaixueImage {
+    height: 3.5rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/37dd33186d04c90b5f9be82a906b4be1));
+	.ANI(@ANI_TOP_TO_BOTTOM_LONG 1s linear 0s 1);
+} 
+
+.pageOneContentText {
+    color: #2d2d2d;
+    font-size: 0.35rem;
+    line-height: 0.45rem;
+    text-align: left;
+    font-weight: 900;
+    width: 50%;
+    transform: rotate(-10deg);
+	margin-left: 2.5rem;
+    margin-top: -1.4rem;
+}
+
+.pageOneHornImage {
+    height: 1rem;
+    width: 1rem;
+	margin-left: 1.5rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/db1f63304e9eb5a64150690ac97ba340));	
+}
+
+.pageOneHederImage {
+	.setWH(2rem, 2rem);
+    background-color: white;
+    position: absolute;
+    left: calc(~"50% - 1rem");
+    top: 1rem;
+    z-index: 101;
+    border-radius: 50%;	
+	.general_img_attribute();
+}
+
+.pageOnePersonImage {
+	.setWH(100%, 4rem);
+    position: absolute;
+    bottom: 0px;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/1cd6c17bc5ead8f31c89a0c1519adb10));	
+}
+
+.pageOneHouseImage {
+	.setWH(2.5rem, 2.3rem);
+	position: absolute;
+    right: 0px;
+    bottom: 0.7rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/0fe046a4ab5b03c6bdd99e8da234bc42));	
+}
+
+.pageOneCarImage {
+	.setWH(1rem, 0.6rem);
+	position: absolute;
+    right: 0px;
+    bottom: 0.1rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/70f429cd51c15dbeb55790dffad0b006));	
+}
+
+
+/*第二页*/
+
+.background_page2_image {
+	.common_background_image(url(http://img.ishanshan.com/gimg/ori/34ee82993192c92e552a277831f10f83));
+}
+
+.pageTwoContentBoxImage {
+    height: 60%;
+    width: 90%;
+    margin: auto;
+	margin-top: 0.5rem;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/12dd0b4c3b390633a20cfec984b66e27));
+}
+
+.pageTwoPerson {
+    height: 1.5rem;
+    width: 1rem;
+    margin: auto;
+    margin-top: -0.5rem;
+	position: absolute;
+    left: 0.5rem;
+	z-index: 1;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/3cbdae3ab61851cadef246f8c565529a));
+}
+
+.pageTwoBookBoxTitle {
+	.commonText(1rem);
+} 
+
+.pageTwoBoxContent {
+    width: 74%;
+    position: relative;
+//    top: .5rem;
+    left: .5rem;
+	overflow: hidden;
+    max-height: 84%;
+	margin-top: -0.3rem;
+}
+
+.pageTwoBoxContentItem {
+	margin: 0px;
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+	font-weight: 900;
+	color : #2c2f24;
+	word-wrap: break-word;
+}
+
+.pageTwoWavesImage {
+	.setWH(100%, 1.5rem);
+	position: absolute;
+	bottom : 0px;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/74e7563e508c7a951193efd6e0490ee6));
+	animation: wavesAni;
+	-webkit-animation : wavesAni;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	background-size: cover;
+    background-repeat: repeat;
+
+} @keyframes wavesAni {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: 100%;
+	}
+}
+
+.pageTwoPencliImage {
+	.setWH(100%, 2.3rem);
+    position: absolute;
+    bottom: 1rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/88001e943600022ee3ab27a5cf925956));
+	animation: pencliAni;
+	-webkit-animation : pencliAni;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	background-size: cover;
+    background-repeat: repeat;
+	
+} @keyframes pencliAni {
+	0%{bottom: 1rem; left : 100%;}
+	10%{bottom: 1.2rem; left : 90%;}
+	20%{bottom: 1rem; left : 80%;}
+	30%{bottom: 1.2rem; left : 70%;}
+	40%{bottom: 1rem; left : 60%;}
+	50%{bottom: 1.2rem; left : 50%;}
+	60%{bottom: 1rem; left : 40%;}
+	70%{bottom: 1.2rem; left : 30%;}
+	80%{bottom: 1rem; left : 20%;}
+	90%{bottom: 1.2rem; left : 10%;}
+	100%{bottom: 1rem; left : -100%;}
+}
+
+
+/*第三页*/
+.background_page3_image {
+	.common_background_image(url(http://img.ishanshan.com/gimg/ori/16995cf0e7e496297fc841e8312b06dc));
+}
+
+.pageThreeBoxContent {	
+	width: 60%;
+    position: relative;
+    left: 20%;
+    top: 2.5rem;
+}
+
+.pageThreeCarImage {
+	.setWH(2rem, 1rem);
+    position: absolute;
+	bottom: 0px;
+	left : -2rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/8ab6a36a8ca4feb82c421a0f28c2eb7e));
+	.ANI(@ANI_RIGHT_FADE_OUT_NOT_OPACITY 3s linear 0s infinite);
+}
+
+.pageThreePlaneImage {
+	.setWH(1rem, 1rem);
+    position: absolute;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/cd55b8f4d315f8d9bae592df95108831));
+	.ANI(@ANI_IMAGE_ANGLE_LAUNCH 3s linear 0s infinite);
+} 
+
+/*第四页*/
+.background_page4_image {
+	.background_page1_image();
+}
+
+.pageFourCoverBox {
+	width: 80%;
+    margin: auto;
+    height: 3.8rem;
+	overflow: hidden;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/a75421c659b8e5fca18e0e601d62f9b0));
+}
+
+.commonFourImage {
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    border: 6px white solid;
+    border-radius: 0.1rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+}
+
+.pageFourCoverBox1 {
+	.pageFourCoverBox();
+	margin-top: 0.5rem;
+}
+
+.pageFourCoverBox2 {
+	.pageFourCoverBox();
+	margin-top: 0.2rem;
+}
+
+.pageFourBoxCover1Image {
+	.commonFourImage();
+}
+
+.pageFourBoxCover2Image {
+	.commonFourImage();
+}
+
+.pageFourBookImage {
+	height : 2rem;
+	width : 2rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/de07011b231438a2078e5397b1c62c00));
+ 	position: absolute;
+    right: 0px;
+	bottom : 10px;
+}
+
+.pageFourPersonImage {
+	height : 3rem;
+	width : 2.5rem;
+	position: absolute;
+	left: 0.5rem;
+    bottom: 0.5rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/40660d60e9b68c6aa833e0fb758e0ab2));
+	.ANI(@ANI_SHAKING 2s linear 0s infinite);
+}
+
+
+/*第五页*/
+.background_page5_image {
+	.background_page2_image();
+}
+
+.pageFiveBoxContentItem {
+	color : #2c2f24;
+	font-size: 0.3rem;
+	font-weight: 900;
+	margin: 0px;
+    line-height: 0.45rem;
+	word-wrap: break-word;
+}
+
+.pageFourBaseImage {
+    position: absolute;
+    height: 9rem;
+    width: 100%;
+    top: 1.5rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/255d504cf59533307f362306ced34be8));
+}
+
+.pageFiveBoxContent {
+    max-height: 6rem;
+    width: 76%;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    overflow: hidden;
+	margin-top: -0.5rem;
+}
+
+.pageFiveBoxLabaImage {
+	position: absolute;
+	width : 1rem;	
+	height : 1rem;
+	right: 0.2rem;
+    top: 1.6rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/067b61f13b8161f1d5cf67f5bc1a99e0));
+}
+
+.pageFiveBoxPersonImage {
+	width : 100%;	
+	height : 2.3rem;
+	position: absolute;
+    bottom: 0rem;
+	.common_image(url(http://img.ishanshan.com/gimg/ori/5ec642b443c1b5d74d9ff6fcab99ac8c));
+}
+
+
+/*第六页*/
+.background_page6_image {
+	.background_page1_image();
+}
+
+.pageSixeBoxContent {
+	max-height : 6rem;
+	width  : 75%;
+	padding: 0.3rem;
+	overflow: hidden;
+	margin-left: 1rem;
+	margin-top: -0.5rem;
+}
+
+.pageSixBoxContentItem {
+	margin: 0px;
+    line-height: 0.45rem;
+    font-size: 0.3rem;
+	color : #2c2f24;
+	font-weight: 900;
+	word-wrap: break-word;
+}
+
+.PageSixGrassImage {
+	.common_image(url(http://img.ishanshan.com/gimg/ori/1703e910e4b127ca6cc6e01c361d4c78));
+	height : 2.5rem;
+	width : 100%;
+	position: absolute;
+	bottom : 0px;
+}
+
+.PageSixGirlImage {
+	.common_image(url(http://img.ishanshan.com/gimg/ori/e0484ad1124838a7e638ce9d1d5070e1));
+    height: 3rem;
+    width: 1.5rem;
+    bottom: 1rem;
+    position: absolute;
+}
+
+.PageSixboyImage {
+	.common_image(url(http://img.ishanshan.com/gimg/ori/4287d0b2cd62a1775c4377fc3aaba38d));
+	height : 3rem;
+	width : 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+	right : 0px;
+}
+
+/*第七页*/
+.background_page7_image {	
+	.common_background_image(url(http://img.ishanshan.com/gimg/ori/c7a06073764a40ed9c5849d1fa66b221));
+}
+
+.input_box {
+	position: absolute;
+    top: 3rem;
+    width: 80%;
+    left: 10%;
+}

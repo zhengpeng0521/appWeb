@@ -1,0 +1,81 @@
+.custom_image_picker_cont {
+//    display:inline-block;
+    width: 98%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    min-height: 44px;
+//    padding-left: 15px;
+//    padding-right: 15px;
+//    padding-bottom: 10px;
+    position: relative;
+}
+.custom_image_picker_cont :global(.am-activity-indicator.am-activity-indicator-toast){
+    left: 0;
+}
+.custom_image_picker_cont:after {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1PX;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+}
+.custom_image_picker_title {
+    width: 84px;
+    height: 44px;
+    line-height: 44px;
+    align-self: flex-start;
+    color: #000;
+    text-align: left;
+    min-height: 44px;
+    font-size: 17px;
+    line-height: 34px;
+    margin-left: 0;
+    margin-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.custom_image_picker_imgs {
+//    flex: 1;
+//    padding-top: 10px;
+//    padding-bottom: 9px;
+}
+
+.custom_image_picker_helper_cont {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: 0;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.custom_image_picker_helper {
+    padding: 0 15px;
+    color: #999;
+    font-size: 12px;
+}
+
+.custom_image_picker_cont .custom_image_picker_imgs :global(.am-image-picker-list .am-flexbox-item .am-image-picker-item-content) {
+    transform: rotate(0deg)!important;
+}
+
+.custom_image_picker_cont :global{
+    .am-flexbox{
+        overflow: visible;
+    }
+
+    .am-image-picker-list .am-image-picker-item .am-image-picker-item-remove{
+        right: -6px;
+        top: -6px;
+    }
+}

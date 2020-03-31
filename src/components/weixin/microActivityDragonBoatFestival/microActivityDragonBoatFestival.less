@@ -1,0 +1,560 @@
+:global {
+	
+	.dragonBoatFestivalBaseDiv {
+		height : 100%;
+		margin: 0px;
+	}
+	
+	.dragonBoatFestivalBaseDiv .am-input-control {
+		width: 100%;
+    	line-height: 1rem;
+	}
+	
+	.dragonBoatFestivalBaseDiv .am-list-item {
+		position: absolute;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		min-height: 1.7rem;
+		height: 1.7rem;
+		border-radius: 0.3rem;
+		background : 0;
+	}
+	
+	.dragonBoatFestivalBaseDiv .am-input-control input {
+		color: #666;
+		font-size: 0.55rem;
+		text-align: center;
+		width: 100%;
+		background : 0;
+		border: 0;
+		height : 40px;
+//		margin-left:-1rem;
+	}
+	
+	.dragonBoatFestivalBaseDiv .am-input-control input::-webkit-input-placeholder {
+		font-size: 14px;
+	}
+	
+	.dragonBoatFestivalBaseDiv .am-list-item.am-input-item:after {
+		border-bottom : 0px;
+	}
+}
+
+//界面一
+.background1 {
+    background: url(http://img.ishanshan.com/gimg/img/737b1bbaf952db8f1918656270dca7a5!s400) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.background_title_image {
+    background: url(http://img.ishanshan.com/gimg/img/0c8e687e8bc3eae9d4a4258fc6d890b6!s500) no-repeat center 0;
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1.3rem;
+    background-size: contain;
+}
+
+.background1_title_div {
+    width: 80%;
+    height: 2rem;
+    background: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    opacity: 0.9;
+    border-radius: 0.5rem;
+}
+
+.background1_title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    text-align: center;
+    color: #2c6814;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 2rem;
+}
+
+.background1_fuzzy {
+    height: 4rem;
+    background: white;
+    position: absolute;
+    top: 8rem;
+    opacity: 0.9;
+    border-radius: 0.3rem;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background1_fuzzy_content {
+    position: absolute;
+    color: #666;
+    font-size: 0.4rem;
+    line-height: 0.55rem;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: 3.2rem;
+    top: 8.5rem;
+    border-radius: 0.3rem;
+    width: 76%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+	text-indent: 0.5rem;
+}
+
+//界面二
+.background2 {
+    background: url(http://img.ishanshan.com/gimg/img/f36b3f3bd697c9af590b8f801fee3d83!s300) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.background2_title_fuzzy {
+    width: 80%;
+    height: 2rem;
+    background: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1rem;
+    opacity: 0.9;
+    border-radius: 0.5rem;
+}
+
+.background2_title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 72%;
+	top : 1rem;
+    position: absolute;
+    text-align: center;
+    color: #2c6814;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+	line-height: 2rem;
+}
+
+.background2_bakcImage {
+    height: 45%;
+    background-size: contain;
+    position: absolute;
+    top: 4rem;
+    width: 80%;
+    margin: auto;
+    background: white;
+    left: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+}
+
+.background2_content {
+    width: 68%;
+    height: 5.5rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background2_content_left_p {
+    font-size: 0.4rem;
+    color: #666;
+    float: left;
+    margin-top: 0px;
+    width: 27%;
+    text-align: right;
+    padding: 0.1rem;
+}
+
+.background2_content_right_p {
+    font-size: 0.4rem;
+    color: #666;
+    float: left;
+    margin-top: 0px;
+    width: 65%;
+    padding: 0.1rem;
+	line-height: 0.55rem;
+}
+
+.background2_wine_image {
+	background: url(http://img.ishanshan.com/gimg/img/b5cae8e6efe203d0124f825f5721e535!s200) no-repeat center 0;
+    position: absolute;
+    width: 6rem;
+    height: 5rem;
+    background-size: contain;
+    right: 0rem;
+    margin: auto;
+    bottom: 0rem;
+	opacity: 0;
+    animation: wine_ani;
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+} @keyframes wine_ani {
+     0%{ opacity: 0;}
+    100%{  opacity: 1;}
+}
+
+//界面三
+.background3 {
+    background: url(http://img.ishanshan.com/gimg/img/f36b3f3bd697c9af590b8f801fee3d83!s300) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.background3_base_white_background {
+    height: 12rem;
+    background: 0;
+    top: 3.6rem;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    left: -0.1rem;
+    right: 0;
+}
+
+.center_div {
+	width : 2%;
+	height : 100%;
+	background: 0;
+	float: left;
+}
+
+.background3_top_div {
+    height: 3rem;
+    width: 97%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.1rem;
+    right: 0;
+    top: 0.1rem;
+    overflow: hidden;
+}
+
+.background3_top_img {
+    height: 100%;
+    width: 49%;
+    background: #f5eded;
+    float: left;
+    background-size: 100% 100%;;
+	background-position: center;
+    background-repeat: no-repeat;
+	border-radius: 0.4rem;
+}
+
+.background3_top_right_div {
+    height: 100%;
+    width: 49%;
+    background: #f1f1f1;
+    float: left;
+	border-radius : 0.4rem;
+}
+
+.background3_top_text {
+    height: 70%;
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+    line-height: 0.5rem;
+    text-indent: 0.5rem;
+    color: #666666;
+    overflow: hidden;
+}
+
+.background3_center_div {
+    height: 3rem;
+    width: 97%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.1rem;
+    right: 0;
+    top: 3.4rem;
+    overflow: hidden;
+}
+
+.background3_center_left_div {
+    height: 100%;
+    width: 49%;
+    background: #f1f1f1;
+    float: left;
+	border-radius : 0.4rem;
+}
+
+.background3_center_img {
+    height: 100%;
+    width: 49%;
+    background: #f5eded;
+    float: left;
+    background-size: 100% 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+	border-radius: 0.4rem;
+}
+
+.background3_center_text {
+    height: 70%;
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+    text-indent: 0.5rem;
+    color: #666666;
+    line-height: 0.5rem;
+    overflow: hidden;
+}
+
+.background3_bottom_div {
+    height: 3rem;
+    width: 97%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.1rem;
+    right: 0;
+    top: 6.7rem;
+    overflow: hidden;
+}
+
+.background3_bottom_img {
+    height: 100%;
+    width: 49%;
+    background: white;
+    float: left;
+    background-size: 100% 100%;;
+	background-position: center;
+    background-repeat: no-repeat;
+	border-radius: 0.4rem;
+}
+
+.background3_buttom_right_div {
+    height: 100%;
+    width: 49%;
+    background: #f1f1f1;
+    float: left;
+	border-radius : 0.4rem;
+}
+
+.background3_bottom_text {
+    height: 70%;
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+    line-height: 0.5rem;
+    text-indent: 0.5rem;
+    color: #666666;
+    overflow: hidden;
+}
+
+//界面四
+.background4 {
+    background: url(http://115.29.172.104/gimg/img/f36b3f3bd697c9af590b8f801fee3d83) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.background4_top_backImage {
+    height: 78%;
+    background-size: contain;
+    position: absolute;
+    top: 2.0rem;
+    width: 100%; 
+}
+
+.background4_bottom_backImage {
+    height: 30%;
+    background-size: contain;
+    position: absolute;
+	background: white;
+    top: 8rem;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+	opacity: 0.9;
+	border-radius: 0.4rem;
+}
+
+.background4_left_image {
+    width: 38%;
+    height: 3.75rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 1rem;
+    float: left;
+	background: white;
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 0.4rem;
+}
+
+.background4_right_image {
+    right: 0.8rem;
+    width: 37%;
+    height: 3.75rem;
+    position: absolute;
+	background: white;
+    top: 1.6rem;
+    left: 5.25rem;
+    float: right;
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 0.4rem;
+}
+
+.background4_content {
+    width: 70%;
+    height: 4.3rem;
+    position: absolute;
+    top: 8.3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background4_content_intro {
+    color: #666;
+    font-size: 0.4rem;
+	line-height: 0.55rem;
+}
+
+.background2_longtou_image {
+	background: url(http://img.ishanshan.com/gimg/img/906480587d7c23af0a8e311f815700b5!s300) no-repeat center 0;
+    position: absolute;
+    width: 6rem;
+    height: 5rem;
+    background-size: contain;
+    right: -6rem;
+    margin: auto;
+    bottom: 0rem;
+    animation: longtou_ani;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+} @keyframes longtou_ani {
+     0%{ right: -6rem;}
+    100%{ right: 0rem;}
+}
+
+//界面五
+.background5 {
+    background: url(http://img.ishanshan.com/gimg/img/e37f38affc71151572ae27d851093a9a!s500) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.inputbackground_key {
+    position: absolute;
+    top: 3.8rem;
+    background: white;
+    height: 1.7rem;
+    border-radius: 0.3rem;
+    width: 79%;
+    opacity: 0.9;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.inputbackground_value {
+    position: absolute;
+    top: 6rem;
+    background: white;
+    height: 1.7rem;
+    border-radius: 0.3rem;
+    width: 79%;
+    opacity: 0.9;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.background5_inputName {
+	height: 1.7rem;
+    width: 87%;
+	position: absolute;
+	top: 3.8rem;
+	position: absolute;
+    border-radius: 0.5rem;
+    left: 1rem;
+	color: black;
+    font-size: 0.8rem;
+    text-align: center;
+	background-color:r!important;
+}
+
+.background5_inputValue {
+	height: 1.7rem;
+    width: 87%;
+	position: absolute;
+	top: 6rem;
+	position: absolute;
+    border-radius: 0.5rem;
+    left: 1rem;
+	color: black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.background5_submit_div {
+	background: url(http://img.ishanshan.com/gimg/img/1e06b29de21338c55015237bb9ebf56b!s200) no-repeat center 0;
+    position: absolute;
+    left: 0;
+    top: 8.3rem;
+    width: 80%;
+    height: 1.7rem;
+    right: 0;
+    margin: auto;
+    background-position: center;
+    background-size: contain!important;
+}
+
+.background5_submit {
+    line-height: 1.7rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+    font-weight: 800;
+}
+
+.technicalSupport {
+    font-size: 0.3rem;
+    position: absolute;
+    bottom: 0.2rem;
+    height: 0.4rem;
+    text-align: center;
+    width: 100%;
+    color: #e3e3e3;
+}
+

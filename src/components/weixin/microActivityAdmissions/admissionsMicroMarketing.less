@@ -1,0 +1,642 @@
+:global {
+	.admm_div {
+		height : 100%;
+		margin: 0px;
+	}
+	
+	.admm_div .am-input-control {
+		width: 100%;
+    	line-height: 1rem;
+	}
+	
+	.admm_div .am-list-item {
+		position: absolute;
+		width: 80%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		min-height: 1.5rem;
+		height: 1.5rem;
+		border-radius: 0.3rem;
+    	background : 0;
+	}
+	
+	.admm_div .am-input-control input {
+		color: white;
+		font-size: 0.55rem;
+		text-align: center;
+		width: 100%;
+		background : 0;
+		border: 0;
+		height : 40px;
+//		margin-left:-1rem;
+	}
+	
+	.admm_div .am-input-control input::-webkit-input-placeholder {
+		font-size: 14px;
+		color : white;
+	}
+	
+}
+
+.admm_bg1 {
+    background: url(http://img.ishanshan.com/gimg/img/557d10335d1e0b7f4bf0800544ffc478!s400) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.admm_bg2 {
+    background: url(http://img.ishanshan.com/gimg/img/caa688c03a885dcb424a37172a518f6e!s400) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.admm_bg3 {
+    background: url(http://img.ishanshan.com/gimg/img/af3927d3e70a0cff3a95868298a61a7b!s400) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.admm_bg4 {
+    background: url(http://img.ishanshan.com/gimg/img/29b441b1185f319450839e124fe50c85!s400) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.admm_bg5 {
+    background: url(http://img.ishanshan.com/gimg/img/4f06ec48b3663ba1a5f967b4443987f2!s500) no-repeat center 0;
+    height: 100%;
+  	background-size: cover;
+	position: relative;
+}
+
+.admm_bg1_admissions_title {
+    width: 80%;
+    position: absolute;
+    top: 5.8rem;
+    left: 0;
+    right: 0;
+    height: 100px;
+    margin: 0 auto;
+    background: red;
+    overflow: hidden;
+    background: url(http://img.ishanshan.com/gimg/img/a3420c6a6f38b544f73c77c8fe1bb48e!s400) no-repeat center 0;
+    background-size: contain;
+    animation: admissionsTitleAni 0.3s infinite ease;
+}
+
+@keyframes admissionsTitleAni  {
+    0%{ left: 0px; transform: rotate(2deg);}
+    25%{ left: 0px; transform: rotate(-2deg);}
+    50%{  left: 0px; transform: rotate(2deg);}
+    70%{  left: 0px;transform: rotate(-2deg);}
+    100%{ left: 0px;transform: rotate(2deg);}
+}
+
+.football {
+    height: 60px;
+    width : 60px;
+    position: absolute;
+    top: 16rem;
+    background: url(http://img.ishanshan.com/gimg/img/aedf38ece56156b260289d9634fe2235) no-repeat center 0;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    opacity: 0;
+    animation: football1 3s ease, football2 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes football1 {
+    0% {top: 16rem; opacity: 1;}
+    40% {top: 12rem; }
+    40% {top: 12.5rem;}
+    80% {top:13rem;}
+    100% {top:13rem;opacity: 1;}
+}
+
+@keyframes football2 {
+    0%  {left: 5rem; transform:rotate(720deg)}
+    100% {left: 0.5rem; transform:rotate(0deg)}
+}
+
+.admm_b2_football_person {
+    height : 5rem;
+    width : 5rem;
+    position: absolute;
+    bottom :-5rem;
+    right : 0rem;
+    background: url(http://img.ishanshan.com/gimg/img/ec2e82bff9a28f1d21ee101b9e4c3170) no-repeat center 0;
+    background-size: contain;
+    animation: football_personAni 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes football_personAni {
+    0% {bottom :-5rem;}
+    100% {bottom :0rem;}
+}
+
+.admm_bg4_penJitter {
+    position: absolute;
+    width: 35%;
+    height : 3rem;
+    top: 7rem;
+    right: -40px;
+    background: url(http://img.ishanshan.com/gimg/img/e4dbadb5260bb12e69071180f6cbcab3) no-repeat center 0;
+    background-size: contain;
+    animation: page1JitterAni 2s infinite ease;
+}
+
+@keyframes page1JitterAni  {
+    0%{transform: scale(0.8);}
+    50%{transform: scale(0.75);}
+    100%{transform: scale(0.8);}
+}
+
+.admm_b4_football_person {
+    height : 5rem;
+    width : 5rem;
+    position: absolute;
+    bottom :-5rem;
+    right : 0rem;
+    background: url(http://img.ishanshan.com/gimg/img/a51b1fa6e220f86b8acc61d07ce8701f) no-repeat center 0;
+    background-size: cover;
+    animation: football_personAni 2s ease;
+    animation-fill-mode: forwards;
+}
+
+.admm_bg3_left_top_penJitter {
+    position: absolute;
+    width: 25%;
+    height: 2rem;
+    top: 6rem;
+    left: 0rem;
+    background: url(http://img.ishanshan.com/gimg/img/448acec8f9e9098c028b94ad8cd233dd) no-repeat center 0;
+    background-size: contain;
+    animation: page3JitterAniLeft1 2s ease;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.admm_bg3_left_bottom_penJitter {
+    position: absolute;
+    width: 25%;
+    height: 2rem;
+    top: 9.5rem;
+    left: -0.3rem;
+    background: url(http://img.ishanshan.com/gimg/img/1a26321d9410aa2eb9d338edbe6768ec) no-repeat center 0;
+    background-size: contain;
+    animation: page3JitterAniLeft2 2s ease;
+    animation-delay: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes page3JitterAniLeft1  {
+    0%{transform: translateX(-100%);opacity: 1;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+
+@keyframes page3JitterAniLeft2  {
+    0%{transform: translateX(-100%);opacity: 1;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+
+.admm_bg3_right_top_penJitter {
+    position: absolute;
+    width: 25%;
+    height: 2rem;
+    right: 0px;
+    top: 1rem;
+    background: url(http://img.ishanshan.com/gimg/img/6ca2fd648053e8dee8ebcf3edc6fd4f6) no-repeat center 0;
+    background-size: contain;
+    animation: page3JitterAniRight1 2s ease;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.admm_bg3_right_center_penJitter {
+    position: absolute;
+    width: 25%;
+    height : 2rem;
+    top: 10rem;
+    right: 0px;
+    background: url(http://img.ishanshan.com/gimg/img/dfabce546d52c9e45d9e28b0c321d5aa) no-repeat center 0;
+    background-size: contain;
+    animation: page3JitterAniRight2 2s ease;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.admm_bg3_right_bottom_penJitter {
+    position: absolute;
+    width: 20%;
+    bottom: -0.7rem;
+    height : 3rem;
+    right: 0px;
+    background: url(http://img.ishanshan.com/gimg/img/32e64af6df831b4e8d9fba88a4cf7e9a) no-repeat center 0;
+    background-size: contain;
+    animation: page3JitterAniRightBottom 2s ease;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes page3JitterAniRight1 {
+    0%{transform: translateX(100%);opacity: 1;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+
+@keyframes page3JitterAniRight2 {
+    0%{transform: translateX(100%);opacity: 1;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+
+@keyframes page3JitterAniRightBottom {
+    0%{transform: translateX(100%); opacity: 1;}
+    100%{transform: translateX(0%); opacity: 1;}
+}
+
+.admm_bg1_title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    top: 4.8rem;
+    text-align: center;
+    color: #fabf23;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.admm_bg1_fuzzy {
+    height: 2.2rem;
+    background: #000;
+    position: absolute;
+    top: 9.5rem;
+    opacity: 0.4;
+    border-radius: 0.3rem;
+    width: 92%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.admm_bg1_fuzzy_content {
+    position: absolute;
+    border-radius: 0.3rem;
+    width: 85%;
+    right: 0;
+    left: 0;
+    top: 0.4rem;
+    color: white;
+    font-size: 0.45rem;
+    line-height: 0.55rem;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.admm_bg2_titile {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 72%;
+    position: absolute;
+    top: 2.2rem;
+    text-align: center;
+    color: #508427;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.admm_bg2_content {
+    width: 83%;
+    height: 4.7rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.admm_bg2_content_left_p {
+    font-size: 0.4rem;
+    color: white;
+    float: left;
+    margin-top: 0px;
+    width: 30%;
+    text-align: right;
+    padding: 0.1rem;
+}
+
+.admm_bg2_content_right_p {
+    font-size: 0.4rem;
+    color: white;
+    float: left;
+    margin-top: 0px;
+    width: 65%;
+    padding: 0.1rem;
+}
+
+.inputbackground_key {
+    position: absolute;
+    top: 6rem;
+    background: #000;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    width: 89%;
+    opacity: 0.15;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.inputbackground_value {
+    position: absolute;
+    top: 8rem;
+    background: #000;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    width: 89%;
+    opacity: 0.15;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.admm_bg3_title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 72%;
+    position: absolute;
+    top: 0.5rem;
+    text-align: center;
+    color: #508427;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.admm_bg3_top_div {
+    background: #eec324;
+    height: 4.3rem;
+    width: 90%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.admm_bg3_top_img {
+    height: 100%;
+    width: 50%;
+    background: #f5eded;
+    float: left;
+    background-size: cover;
+}
+
+.admm_bg3_top_right_div {
+    height: 94%;
+    width: 46.5%;
+    background: #ffdf58;
+    float: left;
+    margin: 0.15rem;
+}
+
+.admm_bg3_top_text {
+    height: 70%;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: 5%;
+    text-indent: 0.5rem;
+    color: white;
+    overflow: hidden;
+}
+
+.admm_bg3_center_div {
+    background: rgb(170,209,82);
+    height: 4.3rem;
+    width: 90%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 6.5rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.admm_bg3_center_left_div {
+    height: 94%;
+    width: 46.5%;
+    background: rgb(189,216,128);
+    float: left;
+    margin: 0.15rem;
+}
+
+.admm_bg3_center_img {
+    height: 100%;
+    width: 50%;
+    background: #f5eded;
+    float: left;
+    background-size: cover;
+}
+
+.admm_bg3_center_text {
+    height: 70%;
+    margin-top: 0.6rem;
+    width: 90%;
+    margin-left: 5%;
+    text-indent: 0.5rem;
+    color: white;
+    overflow: hidden;
+}
+
+.admm_bg3_bottom_div {
+    background: rgb(82,171,211);
+    height: 4.3rem;
+    width: 90%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 11.2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.admm_bg3_bottom_img {
+    height: 100%;
+    width: 50%;
+    background: white;
+    float: left;
+    background-size: cover;
+}
+
+.admm_bg3_buttom_right_div {
+    height: 94%;
+    width: 46.5%;
+    background: rgb(116,197,228);
+    float: left;
+    margin: 0.15rem;
+}
+
+.admm_bg3_bottom_text {
+    height: 70%;
+    margin-top: 0.6rem;
+    width: 90%;
+    margin-left: 5%;
+    text-indent: 0.5rem;
+    color: white;
+    overflow: hidden;
+}
+
+.admm_bg4_title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 72%;
+    position: absolute;
+    top: 1.7rem;
+    text-align: center;
+    color: #f07a22;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.admm_bg4_left_image {
+    width: 40%;
+    height: 4rem;
+    position: absolute;
+    top: 4.3rem;
+    left: 0.8rem;
+    border-radius: 0.2rem;
+    float: left;
+    background-size: cover;
+}
+
+.admm_bg4_right_image {
+    width: 40%;
+    height: 4rem;
+    position: absolute;
+    top: 4.3rem;
+    right: 0.8rem;
+    border-radius: 0.2rem;
+    float: right;
+    background-size: cover;
+}
+
+.admm_bg4_content {
+    width: 77%;
+    height: 3.3rem;
+    position: absolute;
+    top: 8.6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0.3rem;
+}
+
+.admm_bg4_content_intro {
+    color: white;
+    font-size: 0.4rem;
+}
+
+.admm_bg5_title {
+    font-size: 0.6rem;
+    font-weight: bold;
+    width: 50%;
+    position: absolute;
+    top: 2.5rem;
+    text-align: center;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.admm_bg5_inputName {
+	height: 1.5rem;
+    width: 87%;
+	position: absolute;
+	top: 6rem;
+	position: absolute;
+    border-radius: 0.5rem;
+    left: 1rem;
+	color: black;
+    font-size: 0.8rem;
+    text-align: center;
+	background-color:r!important;
+}
+
+.admm_bg5_inputValue {
+	height: 1.5rem;
+    width: 87%;
+	position: absolute;
+	top: 8rem;
+	position: absolute;
+    border-radius: 0.5rem;
+    left: 1rem;
+	color: black;
+    font-size: 0.8rem;
+    text-align: center;
+	background: red;
+}
+
+.technicalSupport {
+    font-size: 0.3rem;
+    position: absolute;
+    bottom: 0px;
+    height: 0.4rem;
+    text-align: center;
+    width: 100%;
+    color: rgb(95,142,86);
+}
+
+.admm_bg5_submit_div {
+    position: absolute;
+    top: 9.8rem;
+    width: 100%;
+    height: 1.3rem;
+    right: 0;
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain!important;
+	background: url(http://img.ishanshan.com/gimg/img/474d6a6f2fe082b672835e8abd96068f) no-repeat center 0;
+}
+
+.admm_bg5_submit {
+    line-height: 1.3rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+    font-weight: 800;
+}
+

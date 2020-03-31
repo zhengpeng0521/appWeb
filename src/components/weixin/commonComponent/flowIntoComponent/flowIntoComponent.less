@@ -1,0 +1,79 @@
+.flow_info_style {
+	transform: scale(2);
+	position: absolute;
+	width: 100%;
+	bottom: 8px;
+	height: 30px;
+	.textCelter();
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.flow_info_style>p {
+	margin: 0px;
+	padding: 0px;
+	.textCelter();
+}
+
+.textCelter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.close {
+	color: white;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	.textCelter();
+}
+
+.lookingForwardAni1 {
+	.lookingForward(url(http://img.ishanshan.com/gimg/img/aedf38ece56156b260289d9634fe2235));
+}
+
+.lookingForwardAni2 {
+	.lookingForward(url(http://img.ishanshan.com/gimg/img/aedf38ece56156b260289d9634fe2235));
+}
+
+.lookingForwardAni3 {
+	.lookingForward(url(http://img.ishanshan.com/gimg/img/aedf38ece56156b260289d9634fe2235));
+}
+
+.lookingForward(@url) {
+	background-image: @url;
+	float: left;
+	width: 1.5rem;
+	height: 2rem;
+	position: absolute;
+	bottom: 0rem;
+	transform: translateY(2rem);
+	text-align: center;
+	.textCelter();
+	animation: lookingForwardsAni 1.5s linear forwards;
+	animation-delay: 0.5s;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+@keyframes lookingForwardsAni {
+	0% {
+		transform: translateY(2rem)
+	}
+	30% {
+		transform: translateY(0rem)
+	}
+	80% {
+		transform: translateY(0rem)
+	}
+	100% {
+		transform: translateY(2rem)
+	}
+}
+
+.name1 {
+	color : red;
+}

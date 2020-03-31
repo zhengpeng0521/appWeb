@@ -1,0 +1,74 @@
+:global {
+	html,
+	body,
+	#voteGameH5 {
+		height: 100%;
+		background: #432887;
+		margin: 0px;
+		padding: 0px;	
+//		overflow: hidden;
+	}	
+	
+	.am-modal-close {
+		color: transparent;
+	}
+	
+	.am-toast-text {
+		line-height : 1rem!important;
+		font-size: 0.4rem!important;
+	}
+	
+	.serviceProviders {
+		color: white;
+		font-size: 0.25rem;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		padding-top: 0.2rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.general_player(@url) {
+	height: 0.7rem;
+	width: 0.7rem;
+	right: 0.2rem;
+	top: 1rem;
+	border-radius: 50%;
+	z-index: 100000;
+	background: @url;
+	position: absolute;
+	background-size: cover!important;
+	background-position: center;
+}
+
+:global(.startPlayer) {
+	.general_player(url(http://img.ishanshan.com/gimg/ori/495fa659393c0eb2e3b20d63ea2eb13d) no-repeat center 0);
+	.general_ani(player_state 5s linear infinite);
+}
+
+:global(.stopPlayer) {
+	.general_player(url(http://img.ishanshan.com/gimg/ori/1a535759701c6f45af45f5b45febc668) no-repeat center 0);
+		-webkit-animation: none;
+			-moz-animation: none;
+				-o-animation: none;
+					animation: none;
+}
+
+@-webkit-keyframes player_state {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.general_ani(@ani_vlaue) {
+	-webkit-animation: @ani_vlaue;
+		-ms-animation: @ani_vlaue;
+			-moz-animation: @ani_vlaue;
+				-o-animation: @ani_vlaue;
+					animation: @ani_vlaue;
+}
+

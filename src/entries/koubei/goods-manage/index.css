@@ -1,0 +1,19 @@
+  html, body, #root {
+	  height: 100%;
+	  width: 100%;
+      font-family: '微软雅黑';
+      font-size: 30px;
+      background-color: #EBEEEF;
+    }
+
+    .goods_list_tabs .am-tabs-bar .am-tabs-tab {
+        color: #A5A5A5;
+    }
+
+    .goods_list_tabs .am-tabs-bar .am-tabs-tab-active {
+        color: #E55322;
+    }
+
+    .goods_list_tabs .am-tabs-ink-bar {
+        background-color : #E55322;
+    }

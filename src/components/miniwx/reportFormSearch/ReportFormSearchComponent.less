@@ -1,0 +1,132 @@
+@import '../../../entries/miniwx/index.less';
+
+:global{
+	//覆盖样式
+	.am-list-item .am-list-line .am-list-content{
+		font-size : @lg_font_size;
+		color : @label_color;
+	}
+	.am-list-item .am-list-line .am-list-extra{
+		font-size : @lg_font_size;
+		color : @label_color;
+	}
+	.am-list-item{
+		height : 4.5rem;
+		min-height : 4.5rem;
+	}
+	.am-list-item.am-list-item-middle .am-list-line{
+		height : 4.5rem;
+		min-height : 4.5rem;
+	}
+	.am-list-item .am-list-line .am-list-arrow{
+		width : 16px;
+		height : 26px;
+		color : @light_color;
+		margin-left : 1.5rem;
+	}
+
+	//时间框禁用时样式
+	.time_disabled .am-list-item .am-list-line .am-list-content{
+		color : @light_color;
+	}
+	.time_disabled .am-list-item .am-list-line .am-list-extra{
+		color : @light_color;
+	}
+	//时间框禁用时样式
+
+	//日期弹框 样式
+	.am-picker-popup-item{
+		color : @base_color;
+	}
+
+	.report_time_select_radio_item{
+		display : inline-block;
+		width : 6.1rem;
+		height : 3rem;
+		line-height : 3rem;
+		margin : 1rem 0 0 1rem;
+		text-align : center;
+		font-size : @base_font_size;
+		color : @base_color;
+		border : 1px solid @base_color;
+		box-sizing : border-box;
+		border-radius : @border_radius;
+	}
+	.report_time_select_radio_item_checked{
+		background : @base_color;
+		color : @btn_color;
+	}
+
+	.report_time_select_time{
+		width : 100%;
+		margin-top : 1.5rem;
+		background : @base_background;
+	}
+
+	.report_time_btn_cancel, .report_time_btn_confirm{
+		width : calc( ~'50% - .75rem' );
+		height : 4.4rem;
+		line-height : 4.4rem;
+		text-align : center;
+		font-size : 1.7rem;
+		border-radius : @lg_border_radius;
+	}
+	.report_time_btn_cancel{
+	}
+	.report_time_btn_cancel .am-button{
+		background : @reset_background;
+		height : 4.4rem;
+		line-height : 4.4rem;
+		color : @btn_color;
+	}
+	.report_time_btn_cancel .am-button.am-button-active{
+		background : #98A2AD;
+	}
+	.report_time_btn_confirm{
+		margin-left : 1.5rem;
+	}
+	.report_time_btn_confirm .am-button{
+		background : @search_background;
+		height : 4.4rem;
+		line-height : 4.4rem;
+		color : @btn_color;
+	}
+	.report_time_btn_confirm .am-button.am-button-active{
+		background : #5D93D8;
+	}
+}
+
+.report_time_select{
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	top : 6.2rem;
+    left : 0;
+	background : rgba( 0, 0, 0, .5 );
+}
+.report_time_select_wrap{
+	position : absolute;
+	top : 0;
+	width : 100%;
+	background : @light_background;
+	overflow : hidden;
+    height:100%;
+}
+.report_time_select_radio{
+	background : @base_background;
+	margin : -1rem 0 0 -1rem;
+	padding : 1.5rem;
+}
+.report_time_select_time_item{
+	color : @label_color;
+}
+
+//时间选择按钮区域
+.report_time_btn_area{
+	display : flex;
+	width : calc( ~'100% - 4rem' );
+	margin : 3rem auto 0;
+	height : 4.4rem;
+	margin-bottom : 3rem;
+}
+

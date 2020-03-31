@@ -1,0 +1,154 @@
+:global {
+	html,
+	body,
+	#weixinH5 {
+		height: 100%;
+		background: rgb(240, 241, 242);
+	}	
+	.swiper {
+		height: 100%;
+	}
+	.swiper-container {
+		height: 100%;
+	}
+	.swiper-slide {
+		overflow: hidden;
+	}
+	.am-toast .am-toast-notice .am-toast-notice-content .am-toast-text {
+		line-height: 0.5rem;
+		font-size: 0.3rem;
+	}
+	.outside-base-d .slider .slider-frame .slider-list .component_css {
+		height: 100%!important;
+	}
+	.outside-base-d .am-carousel .am-carousel-vertical {
+		height: 100%!important;
+	}
+	.outside-base-d .am-carousel {
+		height: 100%!important;
+	}
+	.outside-base-d {
+		height: 100%!important;
+	}
+	.outside-base-d .slider {
+		height: 100%!important;
+	}
+	.outside-base-d .slider .slider-frame {
+		height: 100%!important;
+	}
+	.outside-base-d .slider .slider-frame .slider-list {
+		height: 100%!important;
+	}
+	.outside-base-d .slider .slider-frame .slider-list .slider-slide {
+		height: 100%!important;
+	}
+
+	.technical_support {
+		position: absolute;
+		height: 40px;
+		line-height: 40px;
+		font-size: 0.2rem;
+		text-align: center;
+		width: 100%;
+		margin: 0px;
+		margin-top: -40px;
+	}
+}
+
+.general_player(@url) {
+	height: 0.7rem;
+	width: 0.7rem;
+	right: 0.3rem;
+	top: 0.3rem;
+	border-radius: 50%;
+	z-index: 100000;
+	background: @url;
+	position: fixed;
+	background-size: cover!important;
+	background-position: center;
+}
+
+:global(.startPlayer) {
+	.general_player(url(http://115.29.172.104/gimg/ori/dc7fa210cb69f040ca81a01093d18293) no-repeat center 0);
+	.general_ani(player_state 5s linear infinite);
+}
+
+:global(.stopPlayer) {
+	.general_player(url(http://115.29.172.104/gimg/ori/aedc1560e3f15db77eb17f998c97af04) no-repeat center 0);
+		-webkit-animation: none;
+			-moz-animation: none;
+				-o-animation: none;
+					animation: none;
+}
+
+@-webkit-keyframes player_state {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+:global(.startPlayerMusicalNote) {
+	.general_player(url(http://oss2.rabbitpre.com/rp-preview/static/widget/music/music_c0fda01.gif) no-repeat center 0);
+	height: 0.9rem;
+	width: 0.9rem;
+	right: 0rem;
+	top: 0rem;
+}
+
+:global(.downArrow) {
+	height: 0.4rem;
+	width: 0.7rem;
+	bottom: 0.5rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	transform: rotate(180deg);
+	left: calc(~'50% - 0.2rem');
+	z-index: 100;
+	background-image: url(http://img.ishanshan.com/gimg/img/a752b7b21d793b5a0fe3d952f4900fd7);
+	.general_ani(down_arrow_ani 2s linear infinite);
+}
+
+:global(.downArrowBlack) {
+	height: 0.4rem;
+	width: 0.7rem;
+	bottom: 0.5rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	transform: rotate(180deg);
+	left: calc(~'50% - 0.2rem');
+	z-index: 100;
+	background-image: url(http://img.ishanshan.com/gimg/ori/10ca2c66bc3f6e6be36ef91073950b8c);
+	.general_ani(down_arrow_ani 2s linear infinite);
+}
+
+@-webkit-keyframes down_arrow_ani {
+	0% {
+		opacity: 1;
+		bottom: 0.5rem
+	}
+	50% {
+		opacity: 0.5;
+		bottom: 0.3rem
+	}
+	100% {
+		opacity: 1;
+		bottom: 0.5rem
+	}
+}
+
+.general_ani(@ani_vlaue) {
+	-webkit-animation: @ani_vlaue;
+		-ms-animation: @ani_vlaue;
+			-moz-animation: @ani_vlaue;
+				-o-animation: @ani_vlaue;
+					animation: @ani_vlaue;
+}
+
+

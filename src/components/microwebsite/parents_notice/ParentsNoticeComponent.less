@@ -1,0 +1,59 @@
+@import '../../common/commonLess/HomeAndSchool.less';
+
+:global{
+	.parents_notice_list_wrap .am-list-view-scrollview-content{
+		width : 100%;
+	}
+	.parents_notice_list_wrap .am-list-view-scrollview-content{
+		background : @bg_color;
+	}
+	.parents_notice_list_wrap .list-view-section-body{
+		background : @bg_color;
+		padding-top : 20px;
+	}
+}
+.render_row{
+	position : relative;
+	margin : 0 auto;
+	width : calc( ~'100% - 60px' );
+	box-sizing : border-box;
+	border-top : 10px solid @base_color;
+	background : @base_bg_color;
+	border-radius : 12px;
+	padding-bottom : 1px;
+}
+.render_separator{
+	width : 100%;
+	height : 20px;
+}
+.render_row_item{
+	margin-bottom : 20px;
+	margin-left : 20px;
+	font-size : 24px;
+}
+.render_row_item:last-child{
+//	margin-bottom : 0;
+}
+.render_row_item_label{
+	color : #999;
+	margin-right : 8px;
+}
+.render_row_item_value{
+	color : #666;
+}
+.render_row_item_label_spec{
+	display : inline-block;
+	vertical-align : top;
+	color : #999;
+	margin-right : 8px;
+}
+.render_row_item_value_spec{
+	display : inline-block;
+	vertical-align : top;
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow : ellipsis;
+
+	color : #666;
+	width : calc( ~'100% - 125px' )
+}

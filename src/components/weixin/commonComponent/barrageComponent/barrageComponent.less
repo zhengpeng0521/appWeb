@@ -1,0 +1,38 @@
+.barrageStyle {
+	color: red;
+	font-size: 0.3rem;
+	animation: barrageAni;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border-radius: 20px;
+	padding : 5px 15px;
+//	background-color : rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+	float : left;
+	margin-left : 20px;
+}
+
+@keyframes barrageAni {
+	0% {
+		transform: translateX(700px)
+	}
+	100% {
+		transform: translateX(-700px)
+	}
+}
+
+.closeBarrage {
+	width : 1rem;
+	height : 1rem;
+    background: #f39595;
+    position: fixed;
+    bottom: 0.5rem;
+	right : 0.5rem;
+    border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	line-height: 1rem;
+}

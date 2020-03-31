@@ -1,0 +1,50 @@
+.translateY(@y) {
+	-webkit-transform			: translateY(@y);
+		-ms-transform			: translateY(@y);
+			-moz-transform		: translateY(@y);
+				-o-transform	: translateY(@y);
+					transform	: translateY(@y);
+}
+
+.animation_value(@ani_vlaue) {
+	-webkit-animation			: @ani_vlaue;
+		-ms-animation			: @ani_vlaue;
+			-moz-animation		: @ani_vlaue;
+				-o-animation	: @ani_vlaue;
+					animation	: @ani_vlaue;
+}
+
+.animation_timing_value(@timing_value) {
+	-webkit-animation-timing-function 			: @timing_value;
+		-ms-animation-timing-function			: @timing_value;
+			-moz-animation-timing-function		: @timing_value;
+				-o-animation-timing-function	: @timing_value;
+					animation-timing-function	: @timing_value;
+}
+
+.text_middle {
+	display: flex;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+	-webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.general_img_attribute {
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.general_background_image(@url) {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	background: url(@url) no-repeat center 0;
+	position : relative;
+	overflow: hidden;
+	background-size: 100% 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,93 @@
+
+:global {
+  	html, body, #shanshanH5 {
+	  	height: 100%;
+	  	background: rgb(240, 241, 242);
+  	}
+
+    html {
+        font-size : 75px;
+    }
+
+	.am-toast .am-toast-notice .am-toast-notice-content .am-toast-text {
+		line-height: 0.7rem;
+    	font-size: 0.4rem;
+	}
+
+	.outside-base-d .slider .slider-frame .slider-list .component_css {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .am-carousel .am-carousel-vertical {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .am-carousel {
+		height : 100%!important;
+	}
+	
+	.outside-base-d {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .slider {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .slider .slider-frame {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .slider .slider-frame .slider-list {
+		height : 100%!important;
+	}
+	
+	.outside-base-d .slider .slider-frame .slider-list .slider-slide {
+		height : 100%!important;
+	}
+}
+
+:global(.startPlayer) {
+	height: 1.2rem;
+    width: 1.2rem;
+    background: red;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+	background-position: center;
+    background-size: cover!important;
+    border-radius: 0.6rem;
+	z-index: 1;
+	background: url(http://115.29.172.104/gimg/img/dc7fa210cb69f040ca81a01093d18293) no-repeat center 0;
+
+	-webkit-animation: rotateStart 5s linear infinite;
+    -moz-animation: rotateStart 5s linear infinite;
+    -o-animation: rotateStart 5s linear infinite;
+    animation: rotateStart 5s linear infinite
+}
+
+:global(.stopPlayer) {
+	height: 1.2rem;
+    width: 1.2rem;
+    background: red;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+	background-position: center;
+    background-size: cover!important;
+    border-radius: 1rem;
+	z-index: 1;
+	background: url(http://115.29.172.104/gimg/img/aedc1560e3f15db77eb17f998c97af04) no-repeat center 0;
+//	animation: rotateStart 10s linear infinite;
+//	animation-play-state:paused;
+
+	animation: none;
+	-webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+}
+
+@-webkit-keyframes rotateStart {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}

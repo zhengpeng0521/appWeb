@@ -1,0 +1,510 @@
+:global {
+	.js_defaultPage {
+		height: 100%;
+		width: 100%;
+	}
+	.js_defaultPage .am-input-control {
+		width: 100%;
+		//		height : 100%;
+		line-height: 1rem;
+	}
+	.js_defaultPage .am-list-item {
+		position: absolute;
+		width: 55%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		min-height: 1.5rem;
+		height: 1.5rem;
+		border-radius: 0.3rem;
+		background: 0;
+	}
+	.js_defaultPage .am-input-control input {
+		color: #2c83c3;
+		font-size: 14px;
+		text-align: center;
+		width: 75%;
+		background: 0;
+		border: 0;
+		height: 40px;
+	}
+	.js_defaultPage .am-list-item .am-input-control input::-webkit-input-placeholder {
+		font-size: 14px;
+		color: #eeacd1;
+	}
+}
+
+.js_background1 {
+	background-image: url(http://img.ishanshan.com/gimg/img/403373c9dc1d031f04eef3f2946ee4e0!s500);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100%;
+}
+
+.js_headerImg {
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 1.5rem;
+	border: 1px black solid;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.js_title {
+	line-height: 1.5rem;
+	font-size: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-weight: 600;
+	top: 3.3rem;
+	color: #5f7add;
+	margin: auto;
+	padding: 0px 40px 0px 40px;
+	text-align: center;
+	overflow: hidden;
+	height: 1.5rem;
+	animation: titleAni 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.js_person1 {
+	background: url(http://img.ishanshan.com/gimg/img/d75892e054afd120e833ec1b7e59d3f7!s200) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	height: 3rem;
+	width: 3rem;
+	top: 4.8rem;
+	opacity: 0;
+	left: 10%;
+	float: left;
+	animation: personAni 1s;
+	animation-fill-mode: forwards;
+}
+
+.js_person2 {
+	background: url(http://img.ishanshan.com/gimg/img/e261eeb76f040949913b0591d0de96eb!s200) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	height: 3rem;
+	width: 3rem;
+	top: 4.8rem;
+	right: 10%;
+	opacity: 0;
+	animation: personAni 1s;
+	animation-fill-mode: forwards;
+}
+
+.js_info {
+	height: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 85%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	color: #8e6a36;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	animation: infoAni 1.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation: infoAni 1.5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.js_qr {
+	height: 110px;
+	width: 110px;
+	position: absolute;
+	bottom: 1.05rem;
+	left: 0.7rem;
+	border-radius: 0.3rem;
+	padding: 0.1rem;
+	border: #8e6a36 solid 1px;
+	background: white;
+}
+
+.js_qr_p1 {
+	position: absolute;
+	bottom: 0.6rem;
+	left: 0.7rem;
+	width: 3rem;
+	color: #8e6a36;
+	text-align: center;
+}
+
+.js_qr_p2 {
+	position: absolute;
+	bottom: 0.2rem;
+	color: #8e6a36;
+	left: 0.7rem;
+	width: 3rem;
+	text-align: center;
+}
+
+.js_contact_way {
+	color: #666666;
+	font-size: 0.5rem;
+	font-weight: bold;
+	position: absolute;
+	bottom: 3.3rem;
+	right: 3.4rem;
+}
+
+.js_bottom_contact_div {
+	color: #666666;
+	font-size: 0.35rem;
+	position: absolute;
+	bottom: 0.6rem;
+	right: 0.7rem;
+	width: 47%;
+	height: 2.4rem;
+	overflow: hidden;
+}
+
+.js_l_text {
+	width: 25%;
+	float: left;
+	line-height: 0.6rem;
+}
+
+.js_r_text {
+	width: 75%;
+	float: left;
+	line-height: 0.6rem;
+}
+
+.js_background2 {
+	background-image: url(http://img.ishanshan.com/gimg/img/773390e96bd4021ee3ab829e2318ec4a!s500);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100%;
+}
+
+.js_background2_title {
+	line-height: 2rem;
+	color: #2c83c3;
+	;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 78%;
+	top: 0.2rem;
+	border-radius: 0.5rem;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.js_background2_content_sub_fuzzy {
+	height: 15%;
+	line-height: 18px;
+	position: absolute;
+	width: 72%;
+	top: 2.5rem;
+	left: 15%;
+	overflow: auto;
+	right: 0;
+	white-space: normal;
+	text-overflow: ellipsis;
+	color: #666;
+	font-size: 0.36rem;
+}
+
+.js_background2_photo_l {
+	position: absolute;
+	top: 36%;
+	width: 50%;
+	height: 4rem;
+}
+
+.js_background2_photo_r {
+	position: absolute;
+	top: 36%;
+	width: 50%;
+	right: 0px;
+	height: 4rem;
+}
+
+.js_background2_photo_cover_left {
+	height: 100%;
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.js_background2_photo_cover_right {
+	height: 100%;
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.js_background2_photo_image_left {
+	width: 70%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 88%;
+	border-radius: 10px;
+	top: 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.js_background2_photo_image_right {
+	width: 70%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 88%;
+	border-radius: 10px;
+	top: 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.js_background2_content_sub_fuzzy1 {
+	height: 3rem;
+	position: absolute;
+	width: 70%;
+	bottom: 1rem;
+	left: 0;
+	overflow: auto;
+	right: 0;
+	margin: 0 auto;
+}
+
+.js_background2_content_sub_fuzzy_p1 {
+	width: 100%;
+	float: left;
+	color: #666;
+	font-size: 0.35rem;
+	line-height: 0.6rem;
+}
+
+.js_planet {
+	background: url(http://img.ishanshan.com/gimg/img/95f1f1889091c28727dfd4e321df3208) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	height: 2rem;
+	width: 2rem;
+	top: 9rem;
+	left: 0rem;
+	animation: planetAni 3s;
+	animation-iteration-count: infinite;
+}
+
+.js_preson3 {
+	background: url(http://img.ishanshan.com/gimg/img/cef596c3f990df0377fa4ab805effa04) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	height: 4rem;
+	width: 3.5rem;
+	right: -0.5rem;
+	bottom: 0rem;
+	animation: planetAni 3s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+
+.js_background3 {
+	height: 100%;
+	background: url(http://img.ishanshan.com/gimg/img/9d725d922434164f51b2e47466ed60ea) no-repeat center 0;
+	background-size: cover;
+	position: relative;
+}
+
+.background3_p {
+	line-height: 2rem;
+	color: #2c83c3;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 1.6rem;
+	width: 78%;
+	top: 0.5rem;
+	border-radius: 0.3rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.inputbackground_submit {
+	position: absolute;
+	top: 7rem;
+	width: 100%;
+	height: 1.3rem;
+	right: 0;
+	margin: 0 auto;
+	background-position: center;
+	background-size: contain!important;
+	background: url(http://img.ishanshan.com/gimg/img/9a4fb434c2b0fa21a3cb2ca66ac876f0) no-repeat center 0;
+}
+
+.inputbackground_key {
+	background: url(http://img.ishanshan.com/gimg/img/fd3e107e41730389c3ca3e2e2f7cfead) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	top: 2.5rem;
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	width: 56%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.inputbackground_value {
+	background: url(http://img.ishanshan.com/gimg/img/fd3e107e41730389c3ca3e2e2f7cfead) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	top: 4.5rem;
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	width: 56%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.inputName {
+	height: 1.5rem;
+	width: 56%;
+	position: absolute;
+	top: 2.5rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	left: 1rem;
+	color: black;
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: r!important;
+}
+
+.inputValue {
+	height: 1.5rem;
+	width: 56%;
+	position: absolute;
+	top: 4.5rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	left: 1rem;
+	color: black;
+	font-size: 0.8rem;
+	text-align: center;
+	background: red;
+}
+
+.flyPencil {
+	background: url(http://img.ishanshan.com/gimg/img/d20a4f077d4478621fb9230ee2ded6cf) no-repeat center 0;
+	background-size: contain;
+	position: absolute;
+	height: 12rem;
+	width: 9.5rem;
+	bottom: -7rem;
+	float: left;
+	right: -11rem;
+	animation: flyPencilAni 1s;
+	animation-fill-mode: forwards;
+}
+
+.technicalSupport {
+	font-size: 0.3rem;
+	position: absolute;
+	bottom: 0.1rem;
+	height: 0.3rem;
+	text-align: center;
+	width: 100%;
+	color: #794915;
+}
+
+@keyframes infoAni {
+	0% {
+		opacity: 0;
+	}
+	;
+	100% {
+		opacity: 1;
+	}
+	;
+}
+
+@keyframes personAni {
+	0% {
+		opacity: 0;
+	}
+	;
+	100% {
+		opacity: 1;
+	}
+	;
+}
+
+@keyframes titleAni {
+	0% {
+		opacity: 0;
+	}
+	;
+	100% {
+		opacity: 1
+	}
+	;
+}
+
+@keyframes planetAni {
+	0% {
+		transform: scale(1)
+	}
+	;
+	50% {
+		transform: scale(1.1)
+	}
+	;
+	100% {
+		transform: scale(1)
+	}
+	;
+}
+
+@keyframes flyPencilAni {
+	0% {
+		right: -11rem;
+	}
+	;
+	80% {
+		right: 1rem;
+	}
+	;
+	100% {
+		right: 0.5rem;
+	}
+	;
+}

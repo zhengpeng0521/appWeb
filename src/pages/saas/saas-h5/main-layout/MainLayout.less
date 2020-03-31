@@ -1,0 +1,147 @@
+/*引入less定义的方法*/
+@import '../common/common.less';
+.all{
+    height : 100%;
+    width : 100%;
+    overflow : hidden;
+}
+.children{
+    height : calc(~'100% - 5rem');
+    overflow : hidden;
+}
+.mask_bottom_area,.mask_bottom_area_will_close{
+    width : 100%;
+    position : absolute;
+    bottom : 0;
+    background-color : #fff;
+}
+.mask_bottom_area_will_close{
+    /*均可实现，使用代码量少方案*/
+    .transition(all .1s linear);
+    .transform(translateY(100%));
+//    animation: mask_bottom_area_will_close .3s linear 1;
+//    .animationFillMode(both);
+//    @keyframes mask_bottom_area_will_close{
+//        from { .transform(translateY(0)) }
+//        to { .transform(translateY(100%)) }
+//    }
+//    @-o-keyframes mask_bottom_area_will_close{
+//        from { .transform(translateY(0)) }
+//        to { .transform(translateY(100%)) }
+//    }
+//    @-ms-keyframes mask_bottom_area_will_close{
+//        from { .transform(translateY(0))}
+//        to { .transform(translateY(100%)) }
+//    }
+//    @-moz-keyframes mask_bottom_area_will_close{
+//        from { .transform(translateY(0)) }
+//        to { .transform(translateY(100%)) }
+//    }
+//    @-webkit-keyframes mask_bottom_area_will_close{
+//        from { .transform(translateY(0)) }
+//        to { .transform(translateY(100%)) }
+//    }
+}
+.operation_area{
+    width : 100%;
+    overflow : hidden;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : wrap;
+}
+.operation_area_item{
+    width : 25%;
+    margin-top : 1rem;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : column;
+    justify-content : flex-start;
+    align-items : center;
+    >div{
+        &:first-child{
+            width : 5rem;
+            height : 5rem;
+            border-radius : 50%;
+            margin-bottom : 0.5rem;
+        }
+        &:last-child{
+            font-size: 1.2rem;
+        }
+    }
+}
+.tab_bar{
+    height : 5rem;
+    width : 100%;
+    font-size : 1.5rem;
+    border-top : 0.1rem solid #ddd;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+.tab_bar_item{
+    padding : 0.5rem;
+    margin : 0.5rem;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border-radius: 100rem;
+    .transition(all .3s);
+}
+.circle_area{
+    width : 3rem;
+    height : 3rem;
+    border-radius : 50%;
+    //border : 3px solid #ddd;
+    font-size: 2rem;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color: #5d9cec;
+    background-image : -webkit-linear-gradient(top , #fff 0% , #fff 100%),
+                       -webkit-linear-gradient(left , #fff 0% , #fff 100%);
+    background-size : 7% 70%, 70% 7%;
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+}
+.circle_area_rotate{
+    width : 3rem;
+    height : 3rem;
+    border-radius : 50%;
+    border : 0;
+    font-size: 2rem;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-image : -webkit-linear-gradient(top , #666 0% , #666 100%),
+                       -webkit-linear-gradient(left , #666 0% , #666 100%);
+    background-size : 7% 70%, 70% 7%;
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+    animation: circle_area_rotate .4s ease-in-out 1;
+    .animationFillMode(both);
+    @keyframes circle_area_rotate{
+        from { .transform(rotate(0)) }
+        to { .transform(rotate(45deg)) }
+    }
+    @-o-keyframes circle_area_rotate{
+        from { .transform(rotate(0)) }
+        to { .transform(rotate(45deg)) }
+    }
+    @-ms-keyframes circle_area_rotate{
+        from { .transform(rotate(0)) }
+        to { .transform(rotate(45deg)) }
+    }
+    @-moz-keyframes circle_area_rotate{
+        from { .transform(rotate(0)) }
+        to { .transform(rotate(45deg)) }
+    }
+    @-webkit-keyframes circle_area_rotate{
+        from { .transform(rotate(0)) }
+        to { .transform(rotate(45deg)) }
+    }
+}

@@ -1,0 +1,37 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    font-family: 'MicroSoft YaHei','PingFang SC','-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Hiragino Sans GB', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size:62.5%; /* 10÷16=62.5% */
+}
+body{
+    font-size:12px;
+    font-size:1.2rem ; /* 12÷10=1.2 */
+}
+p{
+    font-size:14px;
+    font-size:1.4rem;
+}
+a{
+    color : #5d9cec;
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 94%!important; /* 15.04÷16=94% */
+    }
+}
+@media only screen and (min-width: 561px){
+    html {
+        font-size: 109%!important; /* 17.44÷16=109% */
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 125%!important; /* 20÷16=125% */
+    }
+}

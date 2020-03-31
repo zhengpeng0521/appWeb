@@ -1,0 +1,87 @@
+.register_all{
+    background: #efeff4;
+    height: 100vh;
+    overflow-x: hidden;
+}
+:global{
+    .step{
+        padding:2.55rem 2rem 2.55rem 3.2rem;
+    }
+    .btn_end .am-button.am-button-primary.am-button-active{
+        background: #CFAD84;
+    }
+    .step .am-steps-item.am-steps-status-process .am-steps-head-inner{
+        color: #CFAD84;
+        background: #CFAD84;
+    }
+    .step .am-steps-item,.am-steps-status-finish .am-steps-head-inner > .am-steps-icon{
+        color:#CFAD84 !important;
+    }
+    .step .am-steps-item.am-steps-status-finish .am-steps-tail > i{
+        background: #CFAD84;
+    }
+    .step .am-steps-item.am-steps-status-process .am-steps-tail > i {
+        background: #CFAD84;
+        width: 0;
+    }
+    .step .am-steps-item.am-steps-status-wait .am-steps-tail > i{
+        background: #ddd;
+    }
+    .step .am-steps-item.am-steps-status-process .am-steps-title{
+        color: #333;
+    }
+    .step .am-steps-item.am-steps-status-wait .am-steps-title{
+        color:#999;
+    }
+    .step .am-steps-title{
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+    .content_all .am-tabs-bar .am-tabs-tab{
+        background: 0;
+    }
+    .content_all .am-tabs-ink-bar{
+        background: 0;
+    }
+    .content_all .am-tabs-bar .am-tabs-tab{
+        border-bottom: 0;
+    }
+    .content_all .am-tabs-bar{
+        display: none;
+    }
+    .content_all .am-tabs-content .am-tabs-tabpane{
+        overflow: hidden;
+    }
+    .content_all .am-tabs-content.am-tabs-content-animated{
+//        transform: none !important;
+        transition: none;
+    }
+    .btn_end{
+        text-align: center;
+        margin: 3rem auto;
+    }
+    .btn_end Button{
+        width: 31.5rem;
+        height:4.4rem;
+    }
+    .btn_end Button:first-child{
+        margin-bottom: 1.5rem;
+    }
+    .btn_end Button:last-child{
+        background:#fff;
+        color:#CFAD84;
+        border: 0;
+    }
+     .btn_end .am-button-small{
+         font-size: 1.6rem;
+    }
+    .am-steps-item.am-steps-status-process.step_num{
+        margin-right: -64px !important;
+    }
+    .am-steps-item.am-steps-status-wait.am-steps-custom.step_num.ellipsis-item{
+        margin-right: -78px !important;
+    }
+    .am-steps-item.am-steps-status-finish.am-steps-custom.step_num{
+        margin-right: -60px !important;
+    }
+}

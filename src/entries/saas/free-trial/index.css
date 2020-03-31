@@ -1,0 +1,46 @@
+html, body, #root {
+    width: 100%;
+    font-family: 'PingFang SC' !important;
+    background-color: #ffffff;
+}
+
+/*list字体大小*/
+.am-list-content{
+    font-size:28px !important;
+}
+/*改变placeholder字体大小*/
+input::-webkit-input-placeholder{
+    font-size:28px !important;
+}
+/*搜索框前面字体大小和粗细*/
+.am-list-item .am-input-label{
+    font-size:28px !important;
+    font-weight: 500;
+}
+/*搜索框输入字体大小和粗细*/
+.am-list-item .am-input-control input{
+    font-size:28px !important;
+    color:#666666 !important;
+}
+/*按钮基本样式*/
+.am-button-primary{
+    background-color:#5d9cec !important;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+         -o-border-radius: 10px;
+            border-radius: 10px;
+}
+/*按钮点击样式*/
+.am-button-primary:active{
+    background-color:dodgerblue !important;
+}
+/*弹出模态框样式 圆角设置*/
+.am-modal.am-modal-transparent .am-modal-content{
+    -webkit-border-radius: 30px !important;
+       -moz-border-radius: 30px !important;
+         -o-border-radius: 30px !important;
+            border-radius: 30px !important;
+}
+.am-list-item .am-input-control input:disabled{
+    color:#666666 !important;
+}

@@ -1,0 +1,316 @@
+@baseName : voteGameSubmit;
+
+:global {
+	
+	.@{baseName} {
+		width : 100%;
+		height : 100%;	
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		background-color: rgb(88,49,183);
+		
+		.am-modal-close {
+			font: 0px;
+			color : transparent;
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-upload-btn:after {
+			height: 0px;
+		}
+		
+		.am-modal-wrap  {
+			background: red;
+		}
+		.am-modal-wrap .am-modal-content .am-modal-close .am-modal-close-x:after {
+			content : '';
+			color : red;
+		}
+		
+		.am-image-picker {
+			width: 85%;
+			margin: auto;
+			margin-top: 0.3rem;
+			padding-left: 20px;
+		}
+		
+		.am-image-picker .am-image-picker-list {
+			padding-top: 0px; 
+     		margin-bottom: 20px; 
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-item {
+			height : 1.7rem!important;
+			width : 1.7rem!important;
+			margin-right: 0.34rem;
+			background-color: #c7b9ed;
+			border-radius: 10px;
+		}
+		
+		.am-flexbox.am-flexbox-align-middle {
+			width : 103%;
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-item .am-image-picker-item-content {
+			border-radius: 10px;
+			background-size: cover;
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-upload-btn::before {
+			content: '';
+			background-image: url(http://img.ishanshan.com/gimg/ori/a198bb9b1bcf19c34cb6635d262f631c);
+		    height: 0.7rem;
+    		width: 0.7rem;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-upload-btn{
+			height : 1.7rem!important;
+			width : 1.7rem!important;
+			background-color: #c7b9ed;
+			border: 2px solid #c7b9ed;	
+			margin-right: 0px;
+		}
+		
+		.am-image-picker .am-image-picker-list .am-image-picker-item .am-image-picker-item-remove {
+			width: 0.4rem;
+			height: 0.4rem;
+			right: 0px;
+			top: 0px;
+			background-image : url(http://img.ishanshan.com/gimg/ori/c4149a0f9a9a58cc8fff891b0079fc30);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		
+		.am-list-item {
+			background-color: #c7b9ed;
+			width : 90%;
+		}
+
+		.am-list-item.am-input-item {
+			padding-left: 15px;
+			width : 95%;
+			font-size: 0.3rem;
+			background-color: transparent;
+			color : #5d3cb9;
+			float: left;
+			line-height: 90px;
+		}
+
+		.am-list-item .am-input-control input {
+			height : 90px;	
+			font-size: 0.35rem;
+			color : #5d3cb9;
+			text-align: center;
+			
+		}
+
+		.am-list-item .am-input-control input::-webkit-input-placeholder {
+			font-size: 0.35rem;
+			height : 90px;
+			color : #5d3cb9;
+			text-align: center;
+		}
+		
+		.am-list-item.am-input-item:after {
+			border-bottom: 0px;
+			border-bottom-color: transparent;
+		}
+
+		.am-list-body {
+			border-top : 0px;
+			border-color: transparent;
+		}
+
+		.am-list-body:after {
+			border-bottom : 0px transparent solid;
+		}
+		
+		.am-list-item .am-list-line {
+			padding-right: 0px;	
+		}
+
+		.am-list-item .am-list-line .am-list-arrow {
+			width: 0px;
+			height: 0px;
+		}
+
+		.am-list-item .am-list-line .am-list-extra {
+			font-size: 0.35rem;
+			color: #5d3cb9;
+			white-space: nowrap;
+			overflow: initial;
+			text-overflow:inherit;
+			white-space: nowrap;
+			text-align: center;
+   			width: 100%;
+			flex-basis : 100%;
+		}
+		
+		.am-list-item am-textarea-item {
+			width: 100%;
+			padding-left: 0px;
+		}
+		
+		.list-view-section-body {
+			width: 100%;
+			overflow: auto;
+			background: #412a7f;
+		}
+		
+		.am-textarea-count {
+			color : #412a7f;
+		}
+		
+		.am-textarea-control textarea {
+			color: #5d3cb9;
+			font-size: 0.3rem;
+			line-height: 0.4rem;
+		}
+		
+		.am-textarea-control textarea::-webkit-input-placeholder {
+		  color: #5d3cb9;
+		}
+	}
+}
+
+
+.commonImageLayout {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat:  no-repeat;
+}
+
+.orgName {
+	width: 70%;
+    background-color: #5333ac;
+    color: #9776f3;
+    font-size: 0.4rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    padding: 0.3rem;
+    line-height: 0.5rem;
+}
+
+.inputBox {
+    width: 78%;
+    height: 91px;
+    background: #c7b9ed;
+    margin: auto;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+}
+
+.promptText {
+    color: #c7b9ed;
+    width: 78%;
+    margin: auto;
+    text-align: left;
+    font-size: 0.27rem;
+}
+
+.noteCss {
+	width: 78%;
+    margin: auto;
+    background: #c7b9ed;
+    height: 2.2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 10px;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+
+.agreedBox {
+	width: 78%;
+    margin: auto;
+	height: 0.8rem;
+}
+
+.termsStatus {
+	float: left;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-left: 10px;
+	color: #c7b9ed;
+}
+
+.terms {
+	float: left;
+	margin-left: 10px;
+	color : #fee437;
+	height: 0.5rem;
+    line-height: 0.5rem;
+	text-decoration-line: underline;
+}
+
+.noSelectStatus {
+	margin-top: 4px;
+    width: 0.32rem;
+    height: 0.32rem;
+    border-radius: 50%;
+    border: 4px #fee437 solid;
+    float: left;
+}
+
+.selectStatus {
+	margin-top: 4px;
+	width: 0.4rem;
+    height: 0.4rem;
+   	background-image: url(http://img.ishanshan.com/gimg/ori/d4747d06fef5db86f730636c91c45e5b);
+	.commonImageLayout();
+    float: left;
+}
+
+.buttonBox {
+    width: 78%;
+    margin: auto;
+    height: 1rem;
+	margin-bottom: 0.4rem;
+}
+
+.commonButton {
+	height : 0.8rem;
+	line-height: 0.8rem;
+	width : 40%;
+	color : white;
+	font-size: 0.35rem;
+	border-radius: 10px;
+	font-weight: 900;
+	
+}
+
+.cancelButton {
+	.commonButton();
+	float: left;
+    text-align: center;
+	background-color: #7d57c8;
+}
+
+.determineButton {
+	.commonButton();
+	float: right;
+	text-align: center;
+	background-color: #ee3970;
+}
+
+.scareaPicker{
+    height: 90px;
+    font-size: 0.35rem;
+    color: #5d3cb9;
+    width: 76%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #c7b9ed;
+    padding-left: 15px;
+}
+
+.scareatxt{
+    display: flex;
+    height: 90px;
+    line-height: 90px;
+}

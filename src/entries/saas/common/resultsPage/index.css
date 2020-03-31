@@ -1,0 +1,7 @@
+html, body, #results {
+  height: 100%;
+  width: 100%;
+  font-family: '微软雅黑';
+  font-size: 30px;
+  background-color: #EBEEEF;
+}

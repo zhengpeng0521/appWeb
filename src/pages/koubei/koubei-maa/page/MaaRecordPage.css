@@ -1,0 +1,62 @@
+.koubeiMaaHistory_baseDiv {
+	height : 100vh;
+    overflow-y: auto;
+}
+
+.koubeiMaaHistory_item_p_first_title {
+    height: 40px;
+    font-size: 30px;
+    background-color: #fff;
+    float: left;
+    width: calc(70% - 26px);
+    margin: 0px;
+    padding: 13px;
+	white-space: nowrap;
+}
+
+.koubeiMaaHistory_item_p_first_value {
+	width: calc(30% - 26px);
+    text-align: right;
+    color: #888;
+    float: left;
+    height: 40px;
+    padding: 13px;
+    margin: 0px;
+    background: white;
+}
+
+.koubeiMaaHistory_item_p_first_hr {
+	background-color: #f1f1f1;
+    border: none;
+    border-top: 1px solid #f1f1f1;
+    width: 95%;
+    margin-left: 15px;
+
+    position: absolute;
+    margin-top: 45px;
+}
+
+.appointmentHistory_p_other_title {
+	height : 35px;
+	width : calc(30% - 26px);
+	text-align : left;
+	padding: 13px;
+	font-size : 26px;
+	color : #666;
+	background-color : white;
+	float : left;
+	margin: 0px;
+}
+
+.appointmentHistory_p_other_value {
+	height : 35px;
+	width : calc(70% - 26px);
+	text-align : right;
+	font-size : 26px;
+	color : #888888;
+	background-color : white;
+	white-space: nowrap;
+	float : left;
+    padding: 13px;
+    margin: 0px;
+}

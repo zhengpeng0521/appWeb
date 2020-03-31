@@ -1,0 +1,92 @@
+@baseName : register_h5;
+:global {
+    .@{baseName} {
+        width: 100%;
+        height: 100%;
+        .am-button-primary {
+            background-color: #3e74b5;
+            border: 0px;
+        }
+        .am-radio {
+            border: 1px #a59f9f solid;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .am-radio-wrapper {
+            line-height: 87px;
+            margin-left: 40px;
+            font-size: 26px;
+            color: #727272;
+        }
+        .am-radio-inner:after {
+            top: -2px;
+            right: 8px;
+            width: 11px;
+            height: 22px;
+            border-color: #3b72b7!important;
+        }
+    }
+    .am-modal-close-x:after {
+        content: '';
+    }
+    .am-list-item {
+        padding: 0px;
+    }
+    .am-list-item .am-input-control input {
+        font-size: 0.3rem;
+        color: #333;
+    }
+    .am-list-item .am-input-control input::-webkit-input-placeholder {
+        font-size: 0.3rem;
+        color: rgb(204, 204, 204);
+    }
+    .am-list-item.am-input-item {
+        padding: 0px;
+    }
+    .am-list-item.am-input-item:after {
+        border: 1px transparent solid;
+    }
+    .am-list-item .am-list-line {
+        padding: 0px;
+    }
+    .am-list-item .am-list-line .am-list-extra {
+        font-size: 0.3rem;
+        text-align: center;
+        width: 100%;
+        color: #333;
+        text-align: left;
+        flex-basis: 86%;
+    }
+    .am-list-item .am-list-line .am-list-arrow {
+        transform: rotate(90deg);
+        width: 20px;
+        height: 20px;
+    }
+    .am-list-item .am-list-line .am-list-extra {
+        font-size: 0.3rem;
+        color: #333;
+        white-space: nowrap;
+        overflow: initial;
+        text-overflow: inherit;
+        white-space: nowrap;
+    }
+    .vertifyBtn {
+        float: right; //            margin-right: 5%;
+        height: 60px;
+        width: 140px;
+        border-radius: 5px;
+        font-size: 24px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #5d9cec;
+        color: white;
+        margin-top: 15px;
+    }
+    .vertifyBtn:hover {
+        cursor: pointer;
+        background-color: #7cc4fd;
+    }
+    .vertifyBtn:active {
+        background-color: #4081d4;
+    }
+}
